@@ -13,7 +13,7 @@ app_about_email	E-mail	E-mail	Email	Correo electrónico	E-mail	E-mail	E-mail	E-p
 app_about_webpage	Webpage	Strona internetowa	Website	Página web	Página da Internet	Page web	Pagina web	Web sayfası	Halaman web	หน้าเว็บ	ウェブページ	웹 페이지	网页
 social_google_youtube_channel	YouTube Channel	Kanał YouTube	Youtube Kanal	Canal de Youtube	Canal do Youtube	Chaîne Youtube	Canale Youtube	Youtube kanalı	Saluran Youtube	ช่องยูทูป	YouTube チャンネル	유튜브 채널	YouTube 频道
 store_google_play	Store Google Play	Sklep Google Play	Store Google Play	Tienda Google Play	Armazene o Google Play	Magasin Google Play	Memorizza Google Play	Google Play\'i saklayın	Simpan Google Play	เก็บ Google Play	Google Play ストア	Google Play 스토어	Google Play 商店
-app_technical_parameters	Technical parameters	Parametry techniczne	technische Parameter	Parámetros técnicos	Parâmetros técnicos	paramètres techniques	parametri tecnici	teknik parametreler	Parameter teknik	พารามิเตอร์ทางเทคนิค	技術的パラメータ	기술적인 매개변수	技术参数
+app_technical_parameters	Technical parameters	Parametry techniczne	Technische Parameter	Parámetros técnicos	Parâmetros técnicos	paramètres techniques	parametri tecnici	teknik parametreler	Parameter teknik	พารามิเตอร์ทางเทคนิค	技術的パラメータ	기술적인 매개변수	技术参数
 app_email_question	Question	Pytanie	Frage	Pregunta	Pergunta	Question	Domanda	Soru	Pertanyaan	คำถาม	質問	질문	问题
 app_email_client_title	Send email	Wyślij email	E-Mail senden	Enviar correo electrónico	Enviar email	Envoyer un e-mail	Invia una email	Eposta gönder	Mengirim email	ส่งอีเมล	メールを送る	이메일을 보내	发电子邮件
 app_email_client_missing	No email application	Brak aplikacji do emaili	Keine E-Mail-Bewerbung	Sin solicitud de correo electrónico	Nenhum aplicativo de e-mail	Pas de candidature par courrier électronique	Nessuna applicazione di posta elettronica	E-posta uygulaması yok	Tidak ada aplikasi email	ไม่มีแอปพลิเคชันอีเมล	メールアプリはありません	이메일 신청 불가	没有电子邮件申请
@@ -157,9 +157,9 @@ sound_owl	owl	sowa	Eule	búho	coruja	hibou	gufo	baykuş	burung hantu	นกฮ�
 sound_crow	crow	kruk	Krähe	cuervo	corvo	corbeau	corvo	karga	burung gagak	อีกา	カラス	까마귀	乌鸦
 sound_donkey	donkey	osioł	Esel	burro	burro	âne	asino	eşek	keledai	ลา	ロバ	당나귀	驴
 sound_coyote	coyote	kojot	Kojote	coyote	coiote	coyote	coyote	çakal	anjing hutan	โคโยตี้	コヨーテ	코요테	土狼
-sound_type_human	human	człowiek	menschlich	humano	humano	humain	umano	insan	manusia	มนุษย์	人間	인간	人类
-sound_cry	cry	płacz	weinen	llorar	chorar	pleurer	gridare	ağlamak	menangis	ร้องไห้	泣く	울다	哭
-sound_drink	drink	picie	trinken	beber	bebida	boire	bere	içmek	minum	ดื่ม	飲む	마시다	喝
+sound_type_human	human	człowiek	Menschlich	humano	humano	humain	umano	insan	manusia	มนุษย์	人間	인간	人类
+sound_cry	cry	płacz	Weinen	llorar	chorar	pleurer	gridare	ağlamak	menangis	ร้องไห้	泣く	울다	哭
+sound_drink	drink	picie	Trinken	beber	bebida	boire	bere	içmek	minum	ดื่ม	飲む	마시다	喝
 sound_monster	monster	potwór	Monster	monstruo	monstro	monstre	mostro	canavar	raksasa	สัตว์ประหลาด	モンスター	괴물	怪物
 sound_type_music	music	muzyka	Musik	música	música	musique	musica	müzik	musik	ดนตรี	音楽	음악	音乐
 sound_drum	drum	bęben	Trommel	tambor	tambor	tambour	tamburo	davul	drum	กลอง	ドラム	북	鼓
@@ -171,6 +171,13 @@ sound_type_environment	environment	otoczenie	Umfeld	ambiente	ambiente	environnem
 sound_door	door	drzwi	Tür	puerta	porta	porte	porta	kapı	pintu	ประตู	ドア	문	门
 sound_car	car	samochód	Auto	auto	carro	voiture	auto	araba	mobil	รถ	車	자동차	车
 sound_thunder	thunder	burza	Donner	trueno	trovão	tonnerre	tuono	gök gürültüsü	guruh	ฟ้าร้อง	雷	우뢰	雷
+sound_bell	bell	dzwonek	Glocke	campana	sino	cloche	campana	zil	bel	กระดิ่ง	ベル	종	铃铛
+sound_lift	lift	winda	Aufzug	ascensor	elevador	ascenseur	ascensore	asansör	lift	ลิฟต์	エレベーター	엘리베이터	电梯
+sound_lighter	lighter	zapalniczka	Feuerzeug	encendedor	isqueiro	briquet	accendino	çakmak	pemantik api	ไฟแช็ค	ライター	라이터	打火机
+sound_ice	ice	lód	Eis	hielo	gelo	glace	ghiaccio	buz	es	น้ำแข็ง	氷	얼음	冰
+sound_drop	drop	kropla	Tropfen	gota	gota	goutte	goccia	damla	tetes	หยด	滴	방울	滴
+sound_clap	clap	klaskanie	Klatschen	aplaudir	aplauso	clappement	applauso	alkış	tepuk tangan	ปรบมือ	拍手	박수	鼓掌
+sound_whistle	whistle	gwizdanie	Pfeife	silbido	apito	sifflet	fischio	düdük	peluit	นกหวีด	笛	휘파람	哨子
 sound_type_technology	technology	technologia	Technologie	tecnología	tecnologia	technologie	tecnologia	teknoloji	teknologi	เทคโนโลยี	テクノロジー	기술	技术
 sound_bonus	bonus	bonus	Bonus	prima	bônus	prime	bonus	bonus	bonus	โบนัส	ボーナス	보너스	奖金
 sound_transformer	transformer	transformer	Transformator	transformador	transformador	transformateur	trasformatore	trafo	transformator	หม้อแปลงไฟฟ้า	変成器	변신 로봇	变压器
