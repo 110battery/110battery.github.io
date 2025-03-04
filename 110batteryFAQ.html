@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKY9Y8753Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YKY9Y8753Q');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>110kV Software - FAQ</title>
+    <link rel="icon" href="imgs/110_logo_128.png">
+    <!-- background-color: lightgrey; -->
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<center>
+
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <p><a href="./index.html">Home</a></p>
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+
+    <table cellspacing="20">
+
+        <tr><td>
+            <h3>1. Speech settings</h3>
+            <ul>
+                <li>System - no change</li>
+                <p>
+                The application will use Android system speech settings (engine, language, voice, speed, pitch),
+                <br/>often called "text to speech" or TTS for short, available in each version of Android system.
+                <br/>The localization depends on the Android version and manufacturer, check for example:
+                <br/>Settings -> General management -> Text-to-speech
+                <br/>Settings -> System -> Language & input -> Text-to-speech output
+                </p>
+
+                <li>Application - (language)</li>
+                <p>
+                When you select this option, which is selected by default,
+                the application will use the system text to speech engine,
+                <br/>but will also try to set the voice language to the same language as the application interface.
+                </p>
+
+                <li>Enter custom</li>
+                <p>
+                To customize own speech settings independent from system, choose this option,
+                <br/>and customize own parameters (engine, language, voice, speed, pitch)
+                directly in application.
+                </p>
+            </ul>
+        </td></tr>
+
+        <tr><td>
+            <h3>2. Additional speech engines</h3>
+            <p>
+            Most android devices have pre-installed speech engines.
+            The most common are:
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.google.android.tts">Google Speech Recognition and Synthesis</a></li>
+                <li><a href="https://galaxystore.samsung.com/detail/com.samsung.SMT?langCd=en">Samsung text-to-speech engine</a></li>
+            </ul>
+
+            <br/>You can install additional speech engines and voices of your choice.
+            <br/>Some voices may require additional payment. You can try for example:
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=es.codefactory.vocalizertts">Vocalizer TTS</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.acapelagroup.android.tts">Acapela TTS Voices</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.github.olga_yakovleva.rhvoice.android">RHVoice</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.intu.multilingualtts">Multilingual TTS</a></li>
+            </ul>
+            </p>
+        </td></tr>
+
+        <tr><td>
+            <h3>3. Battery charge status 100% versus full</h3>
+            <p>
+                When you charge your device and it reaches 100% load,
+                <br/>you can see that it will still be in charging state,
+                and you will still see significant charging current (when the device supports).
+
+                <br/>Battery full charge status is when the device finishes charging the battery,
+                you should not see any charging current
+                <br/>and the device starts drawing power directly from the charger.
+
+                <br/>Keep in mind that it may take some time to reach this state
+                and requires the right cable and charger.
+                <br/>We noticed that some devices never reach this state,
+                and some with a long delay.
+            </p>
+        </td></tr>
+
+        <tr><td>
+            <h3>4. Presenting charging current</h3>
+            <p>
+                Not every device shows the correct charging current.
+                <br/>A minus sign (-) before the current should appear during discharging,
+                the absence of the sign means charging, the battery is gaining energy.
+                <br/>It should be noted that some devices can have the opposite logic.
+                <br/>It is also possible that some weak chargers or USB are not able to provide enough power,
+                <br/>so you may see that the device is losing power even when connected to the charger.
+                <br/>Just try using a different cable or a charger with higher power.
+            </p>
+        </td></tr>
+
+        <tr><td>
+            <h3>5. Background activity</h3>
+            <p>
+                Remember that every application in the background uses some power.
+
+                <br/>Every android device has battery saving procedures,
+                that are designed to save battery power.
+                <br/>The system may try to stop some apps from running in the background,
+                especially when the device is disconnected from the charger.
+                <br/>To avoid this behaviour, check the various system app settings, for example:
+                <br/>"Allow background activity"
+                <br/>"Ignore battery optimization"
+                <br/>"Remove from optimized applications"
+            </p>
+            <p>
+                <br/>If you only need the application as a charging assistant,
+                you can manually close the application once it's done charging.
+                <br/>Use the cross in upper right corner to completely close the application,
+                <br/>along with the notification.
+            </p>
+        </td></tr>
+
+    </table>
+
+</center>
+</body>
+</html>
