@@ -87,6 +87,7 @@
 			<tr><td>screen_lock</td><td>Screen lock</td><td>قفل الشاشة</td></tr>
 			<tr><td>full_screen</td><td>Full screen</td><td>تكبير الشاشة</td></tr>
 			<tr><td>turn_sound_on</td><td>Turn on the sound</td><td>قم بتشغيل الصوت</td></tr>
+			<tr><td>check_FAQ</td><td>Check FAQ on webpage for more information</td><td>تحقق من الأسئلة الشائعة على صفحة الويب لمزيد من المعلومات</td></tr>
 			<tr><td>translation_word</td><td>translation</td><td>ترجمة</td></tr>
 			<tr><td>male_word</td><td>male</td><td>ذكر</td></tr>
 			<tr><td>female_word</td><td>female</td><td>أنثى</td></tr>
@@ -128,6 +129,9 @@
 			<tr><td>preference_on_event_time_minutes</td><td>On time repetition period (in minutes)</td><td>فترة التكرار في الوقت المحدد (بالدقائق)</td></tr>
 			<tr><td>preferences_background_title</td><td>Background activity</td><td>النشاط في الخلفية</td></tr>
 			<tr><td>preference_background_service</td><td>Run service</td><td>تشغيل الخدمة</td></tr>
+			<tr><td>preference_background_autostart</td><td>Automatic start after device restart</td><td>التشغيل التلقائي بعد إعادة تشغيل الجهاز</td></tr>
+			<tr><td>preference_silent_mode</td><td>Automatically mute when device sound is turned off</td><td>كتم الصوت تلقائيًا عند إيقاف تشغيل صوت الجهاز</td></tr>
+			<tr><td>preference_device_audio_off</td><td>The device sound is turned off</td><td>تم إيقاف تشغيل صوت الجهاز</td></tr>
 			<tr><td>event_icon</td><td>Icon</td><td>أيقونة</td></tr>
 			<tr><td>event_active</td><td>Active</td><td>نشيط</td></tr>
 			<tr><td>event_inactive</td><td>Inactive</td><td>غير نشط</td></tr>
@@ -178,14 +182,14 @@
 			<tr><td>battery_health_over_voltage</td><td>Warning battery overloaded</td><td>تحذير البطارية مثقلة</td></tr>
 			<tr><td>battery_health_unspecified_failure</td><td>Warning battery damage</td><td>تحذير من تلف البطارية</td></tr>
 			<tr><td>battery_health_cold</td><td>Warning battery cold</td><td>تحذير البطارية باردة</td></tr>
-			<tr><td>battery_plugged_title</td><td>Charger</td><td>شاحن</td></tr>
+			<tr><td>battery_plugged_title</td><td>Charger</td><td>الشاحن</td></tr>
 			<tr><td>battery_plugged_unknown</td><td>Connection status unknown</td><td>حالة الاتصال غير معروفة</td></tr>
-			<tr><td>battery_plugged_none</td><td>Phone not connected</td><td>الهاتف غير متصل</td></tr>
-			<tr><td>battery_plugged_ac</td><td>Phone connected to power</td><td>الهاتف متصل بالطاقة</td></tr>
-			<tr><td>battery_plugged_usb</td><td>Phone connected to usb</td><td>الهاتف متصل باليو إس بي</td></tr>
-			<tr><td>battery_plugged_wireless</td><td>Phone connected wireless</td><td>الهاتف متصل لاسلكيا</td></tr>
-			<tr><td>battery_plugged_dock</td><td>Phone connected to station</td><td>الهاتف متصل بالمحطة</td></tr>
-			<tr><td>battery_plugged_other</td><td>Phone connected differently</td><td>الهاتف متصل بشكل مختلف</td></tr>
+			<tr><td>battery_plugged_none</td><td>Not connected</td><td>غير متصل</td></tr>
+			<tr><td>battery_plugged_ac</td><td>Connected to power</td><td>متصل بالطاقة</td></tr>
+			<tr><td>battery_plugged_usb</td><td>Connected to USB</td><td>متصل بمنفذ USB</td></tr>
+			<tr><td>battery_plugged_wireless</td><td>Connected wireless</td><td>متصل لاسلكيًا</td></tr>
+			<tr><td>battery_plugged_dock</td><td>Connected to station</td><td>متصل بالمحطة</td></tr>
+			<tr><td>battery_plugged_other</td><td>Connected differently</td><td>متصل بشكل مختلف</td></tr>
 			<tr><td>sound_default</td><td>default</td><td>تقصير</td></tr>
 			<tr><td>sound_type_animal</td><td>animal</td><td>حيوان</td></tr>
 			<tr><td>sound_cat</td><td>cat</td><td>قطة</td></tr>
@@ -222,6 +226,8 @@
 			<tr><td>sound_type_technology</td><td>technology</td><td>تكنولوجيا</td></tr>
 			<tr><td>sound_bonus</td><td>bonus</td><td>علاوة</td></tr>
 			<tr><td>sound_transformer</td><td>transformer</td><td>محول</td></tr>
+			<tr><td>speech_missing_engines</td><td>Install additional speech engines</td><td>تثبيت محركات الكلام الإضافية</td></tr>
+			<tr><td>speech_missing_voices</td><td>Download additional speech voices</td><td>تنزيل أصوات الكلام الإضافية</td></tr>
 			<tr><td>speech_hour</td><td>Hour</td><td>ساعة</td></tr>
 			<tr><td>speech_date</td><td>Date</td><td>تاريخ</td></tr>
 			<tr><td>speech_msg_nothing_to_say</td><td>I have nothing to say</td><td>ليس لدي ما أقوله</td></tr>
@@ -274,66 +280,121 @@
 			<tr><td>face_mouth</td><td>This is my mouth</td><td>هذا هو فمي</td></tr>
 			<tr><td>face_hand</td><td>This is my hand</td><td>هذه يدي</td></tr>
 			<tr><td>face_drink</td><td>This is juice</td><td>هذا عصير</td></tr>
-			<tr><td>app_introduction_item00</td><td>Thank you for installing application, please listen to introduction</td><td>شكرا لك على تثبيت التطبيق، يرجى الاستماع إلى المقدمة</td></tr>
-			<tr><td>app_introduction_item01</td><td>Application presents detailed battery parameters</td><td>يقدم التطبيق معلمات البطارية التفصيلية</td></tr>
-			<tr><td>app_introduction_item02</td><td>and notifies with sound or voice about changes in</td><td>ويخطر بالصوت أو الصوت حول التغييرات في</td></tr>
-			<tr><td>app_introduction_item03</td><td>battery charge level</td><td>مستوى شحن البطارية</td></tr>
-			<tr><td>app_introduction_item04</td><td>battery health</td><td>صحة البطارية</td></tr>
-			<tr><td>app_introduction_item05</td><td>connected charger</td><td>شاحن متصل</td></tr>
-			<tr><td>app_introduction_item11</td><td>Here you can modify sound settings</td><td>هنا يمكنك تعديل إعدادات الصوت</td></tr>
-			<tr><td>app_introduction_item12</td><td>turn off the sound</td><td>إيقاف الصوت</td></tr>
-			<tr><td>app_introduction_item13</td><td>or change various voice parameters such as type, speed or pitch</td><td>أو تغيير معلمات الصوت المختلفة مثل النوع أو السرعة أو درجة الصوت</td></tr>
-			<tr><td>app_introduction_item14</td><td>I can speak fast</td><td>أستطيع أن أتكلم بسرعة</td></tr>
-			<tr><td>app_introduction_item15</td><td>or I can speak slow</td><td>أو أستطيع أن أتكلم ببطء</td></tr>
-			<tr><td>app_introduction_item16</td><td>You can download voices, to limit your network connection usage</td><td>يمكنك تنزيل الأصوات، للحد من استخدام اتصال الشبكة الخاص بك</td></tr>
-			<tr><td>app_introduction_item21</td><td>You can customize the sounds and content of voice messages</td><td>يمكنك تخصيص الأصوات ومحتوى الرسائل الصوتية</td></tr>
-			<tr><td>app_introduction_item22</td><td>for example the application might say</td><td>على سبيل المثال قد يقول التطبيق</td></tr>
-			<tr><td>app_introduction_item23</td><td>Dear Peter, your phone [Build.BRAND] is fully charged, you can disconnect the charger</td><td>عزيزي بيتر، هاتفك [Build.BRAND] مشحون بالكامل، يمكنك فصل الشاحن</td></tr>
-			<tr><td>app_introduction_item31</td><td>Here you can switch to full screen view</td><td>هنا يمكنك التبديل إلى عرض ملء الشاشة</td></tr>
-			<tr><td>app_introduction_item32</td><td>and here you can change appearance of the application to</td><td>وهنا يمكنك تغيير مظهر التطبيق إلى</td></tr>
-			<tr><td>app_introduction_item33</td><td>clean battery</td><td>بطارية نظيفة</td></tr>
-			<tr><td>app_introduction_item34</td><td>battery with face animation</td><td>بطارية مع رسوم متحركة للوجه</td></tr>
-			<tr><td>app_introduction_item35</td><td>or battery with detailed parameters such as</td><td>أو البطارية ذات المعلمات التفصيلية مثل</td></tr>
-			<tr><td>app_introduction_item36</td><td>charge level</td><td>مستوى الشحن</td></tr>
-			<tr><td>app_introduction_item37</td><td>temperature</td><td>درجة حرارة</td></tr>
-			<tr><td>app_introduction_item38</td><td>voltage</td><td>الجهد االكهربى</td></tr>
-			<tr><td>app_introduction_item39</td><td>charging current on some phones</td><td>شحن التيار على بعض الهواتف</td></tr>
-			<tr><td>app_introduction_item40</td><td>and their minimum, average and maximum values</td><td>وقيمها الدنيا والمتوسطة والقصوى</td></tr>
-			<tr><td>app_introduction_item51</td><td>Use this button to prevent the screen from turning off</td><td>استخدم هذا الزر لمنع إيقاف تشغيل الشاشة</td></tr>
-			<tr><td>app_introduction_item52</td><td>and here you can set additional application parameters such as</td><td>وهنا يمكنك تعيين معلمات تطبيق إضافية مثل</td></tr>
-			<tr><td>app_introduction_item53</td><td>periodic notifications on time, or after pressing the unlock button</td><td>إشعارات دورية في الوقت المحدد، أو بعد الضغط على زر فتح القفل</td></tr>
-			<tr><td>app_introduction_item54</td><td>Here you have access to system battery parameters</td><td>هنا يمكنك الوصول إلى معلمات بطارية النظام</td></tr>
-			<tr><td>app_introduction_item55</td><td>and here you can check tips how to save energy and keep your battery in good health</td><td>وهنا يمكنك التحقق من النصائح حول كيفية توفير الطاقة والحفاظ على البطارية في حالة جيدة</td></tr>
+			<tr><td>demo_text_01</td><td>Hi, I am a Talking Battery</td><td>مرحبًا، أنا بطارية ناطقة</td></tr>
+			<tr><td>demo_text_02</td><td>I can notify you by sound or voice about</td><td>يمكنني إعلامك بالصوت أو الصوت بشأن</td></tr>
+			<tr><td>demo_text_03</td><td>charge level, health and many other battery parameters</td><td>مستوى الشحن والصحة والعديد من معلمات البطارية الأخرى</td></tr>
+			<tr><td>demo_text_04</td><td>You can customize the messages, so I can say</td><td>يمكنك تخصيص الرسائل حتى أستطيع أن أقول</td></tr>
+			<tr><td>demo_text_05</td><td>Peter, phone charge level is low 20%, connect the charger</td><td>بيتر، مستوى شحن الهاتف منخفض 20%، قم بتوصيل الشاحن</td></tr>
+			<tr><td>demo_text_06</td><td>I am happy when I have a lot of energy</td><td>أنا سعيد عندما يكون لدي الكثير من الطاقة</td></tr>
+			<tr><td>demo_text_07</td><td>Listen to tips on how to take care of your battery's health</td><td>استمع إلى النصائح حول كيفية العناية بصحة البطارية</td></tr>
+			<tr><td>demo_text_08</td><td>Don't wait, just try me out</td><td>لا تنتظر، فقط جربني</td></tr>
+			<tr><td>intro_text_01</td><td>Thank you for installing application, please listen to introduction</td><td>شكرا لك على تثبيت التطبيق، يرجى الاستماع إلى المقدمة</td></tr>
+			<tr><td>intro_text_02</td><td>Application presents detailed battery parameters</td><td>يقدم التطبيق معلمات البطارية التفصيلية</td></tr>
+			<tr><td>intro_text_03</td><td>and notifies with sound or voice about changes in</td><td>ويخطر بالصوت أو الصوت حول التغييرات في</td></tr>
+			<tr><td>intro_text_04</td><td>battery charge level</td><td>مستوى شحن البطارية</td></tr>
+			<tr><td>intro_text_05</td><td>battery health</td><td>صحة البطارية</td></tr>
+			<tr><td>intro_text_06</td><td>connected charger</td><td>شاحن متصل</td></tr>
+			<tr><td>intro_text_07</td><td>Here you can modify sound settings</td><td>هنا يمكنك تعديل إعدادات الصوت</td></tr>
+			<tr><td>intro_text_08</td><td>turn off the sound</td><td>إيقاف الصوت</td></tr>
+			<tr><td>intro_text_09</td><td>or change various voice parameters such as type, speed or pitch</td><td>أو تغيير معلمات الصوت المختلفة مثل النوع أو السرعة أو درجة الصوت</td></tr>
+			<tr><td>intro_text_10</td><td>I can speak fast</td><td>أستطيع أن أتكلم بسرعة</td></tr>
+			<tr><td>intro_text_11</td><td>or I can speak slow</td><td>أو أستطيع أن أتكلم ببطء</td></tr>
+			<tr><td>intro_text_12</td><td>You can download voices, to limit your network connection usage</td><td>يمكنك تنزيل الأصوات، للحد من استخدام اتصال الشبكة الخاص بك</td></tr>
+			<tr><td>intro_text_13</td><td>You can customize the sounds and content of voice messages</td><td>يمكنك تخصيص الأصوات ومحتوى الرسائل الصوتية</td></tr>
+			<tr><td>intro_text_14</td><td>for example the application might say</td><td>على سبيل المثال قد يقول التطبيق</td></tr>
+			<tr><td>intro_text_15</td><td>Dear Peter, your phone [Build.BRAND] is fully charged, you can disconnect the charger</td><td>عزيزي بيتر، هاتفك [Build.BRAND] مشحون بالكامل، يمكنك فصل الشاحن</td></tr>
+			<tr><td>intro_text_16</td><td>Here you can switch to full screen view</td><td>هنا يمكنك التبديل إلى عرض ملء الشاشة</td></tr>
+			<tr><td>intro_text_17</td><td>and here you can change appearance of the application to</td><td>وهنا يمكنك تغيير مظهر التطبيق إلى</td></tr>
+			<tr><td>intro_text_18</td><td>clean battery</td><td>بطارية نظيفة</td></tr>
+			<tr><td>intro_text_19</td><td>battery with face animation</td><td>بطارية مع رسوم متحركة للوجه</td></tr>
+			<tr><td>intro_text_20</td><td>or battery with detailed parameters such as</td><td>أو البطارية ذات المعلمات التفصيلية مثل</td></tr>
+			<tr><td>intro_text_21</td><td>charge level</td><td>مستوى الشحن</td></tr>
+			<tr><td>intro_text_22</td><td>temperature</td><td>درجة حرارة</td></tr>
+			<tr><td>intro_text_23</td><td>voltage</td><td>الجهد االكهربى</td></tr>
+			<tr><td>intro_text_24</td><td>charging current on some phones</td><td>شحن التيار على بعض الهواتف</td></tr>
+			<tr><td>intro_text_25</td><td>and their minimum, average and maximum values</td><td>وقيمها الدنيا والمتوسطة والقصوى</td></tr>
+			<tr><td>intro_text_26</td><td>Use this button to prevent the screen from turning off</td><td>استخدم هذا الزر لمنع إيقاف تشغيل الشاشة</td></tr>
+			<tr><td>intro_text_27</td><td>and here you can set additional application parameters such as</td><td>وهنا يمكنك تعيين معلمات تطبيق إضافية مثل</td></tr>
+			<tr><td>intro_text_28</td><td>periodic notifications on time, or after pressing the unlock button</td><td>إشعارات دورية في الوقت المحدد، أو بعد الضغط على زر فتح القفل</td></tr>
+			<tr><td>intro_text_29</td><td>Here you have access to system battery parameters</td><td>هنا يمكنك الوصول إلى معلمات بطارية النظام</td></tr>
+			<tr><td>intro_text_30</td><td>and here you can check tips how to save energy and keep your battery in good health</td><td>وهنا يمكنك التحقق من النصائح حول كيفية توفير الطاقة والحفاظ على البطارية في حالة جيدة</td></tr>
 			<tr><td>help_title_01</td><td>Application tasks</td><td>مهام التطبيق</td></tr>
-			<tr><td>help_text_01</td><td>The application monitors the device's battery status, presents detailed battery parameters on the screen  and notifies about the most important parameter changes with sound or voice.  You can precisely customize the content of alarms and notifications.  The battery starts talking to you.</td><td>يقوم التطبيق بمراقبة حالة بطارية الجهاز، ويعرض معلمات البطارية التفصيلية على الشاشة  ويخطرك بأهم تغييرات المعلمات بالصوت أو الصوت.  يمكنك تخصيص محتوى التنبيهات والإشعارات بدقة.  تبدأ البطارية في التحدث إليك.</td></tr>
+			<tr><td>help_text_01_01</td><td>The application monitors the device's battery status, presents detailed battery parameters on the screen</td><td>يقوم التطبيق بمراقبة حالة بطارية الجهاز، ويعرض معلمات البطارية التفصيلية على الشاشة</td></tr>
+			<tr><td>help_text_01_02</td><td>and notifies about the most important parameter changes with sound or voice.</td><td>ويخطرك بأهم تغييرات المعلمات بالصوت أو الصوت.</td></tr>
+			<tr><td>help_text_01_03</td><td>You can precisely customize the content of alarms and notifications.</td><td>يمكنك تخصيص محتوى التنبيهات والإشعارات بدقة.</td></tr>
+			<tr><td>help_text_01_04</td><td>The battery starts talking to you.</td><td>تبدأ البطارية في التحدث إليك.</td></tr>
 			<tr><td>help_title_02</td><td>Sound (voice) notifications and alarms</td><td>الإشعارات والتنبيهات الصوتية</td></tr>
-			<tr><td>help_text_02</td><td>You will hear sound notifications when charging, battery health and connected charger changes.  You can activate or disable selected notifications, edit the content and select the notification sound.  To disable only the sound or voice of the notification, tap the sound or speech icon on the notification configuration screen.  For notifications about the charge level, you can specify the detailed range for charging and discharging the phone.  You can also use continuous notification about changes in charge,  then you will be informed about each change in the charge level from 0 to 100, or in any other specified range.</td><td>ستسمع إشعارات صوتية عند الشحن، وصحة البطارية وتغييرات الشاحن المتصل.  يمكنك تنشيط أو تعطيل الإشعارات المحددة، وتحرير المحتوى وتحديد صوت الإشعار.  لتعطيل صوت الإشعار أو صوته فقط، انقر على أيقونة الصوت أو الكلام على شاشة تكوين الإشعارات.  للحصول على إشعارات حول مستوى الشحن، يمكنك تحديد النطاق التفصيلي لشحن وتفريغ الهاتف.  يمكنك أيضًا استخدام الإشعار المستمر حول التغييرات في الشحن،  ثم سيتم إعلامك بكل تغيير في مستوى الشحن من 0 إلى 100، أو في أي نطاق محدد آخر.</td></tr>
+			<tr><td>help_text_02_01</td><td>You will hear sound notifications when charging, battery health and connected charger changes.</td><td>ستسمع إشعارات صوتية عند الشحن، وصحة البطارية وتغييرات الشاحن المتصل.</td></tr>
+			<tr><td>help_text_02_02</td><td>You can activate or disable selected notifications, edit the content and select the notification sound.</td><td>يمكنك تنشيط أو تعطيل الإشعارات المحددة، وتحرير المحتوى وتحديد صوت الإشعار.</td></tr>
+			<tr><td>help_text_02_03</td><td>To disable only the sound or voice of the notification, tap the sound or speech icon on the notification configuration screen.</td><td>لتعطيل صوت الإشعار أو صوته فقط، انقر على أيقونة الصوت أو الكلام على شاشة تكوين الإشعارات.</td></tr>
+			<tr><td>help_text_02_04</td><td>For notifications about the charge level, you can specify the detailed range for charging and discharging the phone.</td><td>للحصول على إشعارات حول مستوى الشحن، يمكنك تحديد النطاق التفصيلي لشحن وتفريغ الهاتف.</td></tr>
+			<tr><td>help_text_02_05</td><td>You can also use continuous notification about changes in charge,</td><td>يمكنك أيضًا استخدام الإشعار المستمر حول التغييرات في الشحن،</td></tr>
+			<tr><td>help_text_02_06</td><td>then you will be informed about each change in the charge level from 0 to 100, or in any other specified range.</td><td>ثم سيتم إعلامك بكل تغيير في مستوى الشحن من 0 إلى 100، أو في أي نطاق محدد آخر.</td></tr>
 			<tr><td>help_title_03</td><td>Battery display modes</td><td>أوضاع عرض البطارية</td></tr>
-			<tr><td>help_text_03</td><td>You can switch the display mode between the view of detailed charge parameters, voltage, temperature,  view of a funny animated face or a clean battery.  You can touch the battery part to read the displayed information aloud.  In the parameters, you can adjust the presentation of average, maximum and minimum values.</td><td>يمكنك تبديل وضع العرض بين عرض معلمات الشحن التفصيلية، والجهد، ودرجة الحرارة،  أو عرض وجه متحرك مضحك أو بطارية نظيفة.  يمكنك لمس جزء البطارية لقراءة المعلومات المعروضة بصوت عالٍ.  في المعلمات، يمكنك ضبط عرض القيم المتوسطة والقصوى والدنيا.</td></tr>
+			<tr><td>help_text_03_01</td><td>You can switch the display mode between the view of detailed charge parameters, voltage, temperature,</td><td>يمكنك تبديل وضع العرض بين عرض معلمات الشحن التفصيلية، والجهد، ودرجة الحرارة،</td></tr>
+			<tr><td>help_text_03_02</td><td>view of a funny animated face or a clean battery.</td><td>أو عرض وجه متحرك مضحك أو بطارية نظيفة.</td></tr>
+			<tr><td>help_text_03_03</td><td>You can touch the battery part to read the displayed information aloud.</td><td>يمكنك لمس جزء البطارية لقراءة المعلومات المعروضة بصوت عالٍ.</td></tr>
+			<tr><td>help_text_03_04</td><td>In the parameters, you can adjust the presentation of average, maximum and minimum values.</td><td>في المعلمات، يمكنك ضبط عرض القيم المتوسطة والقصوى والدنيا.</td></tr>
 			<tr><td>help_title_04</td><td>Speech settings</td><td>إعدادات الكلام</td></tr>
-			<tr><td>help_text_04</td><td>You can adjust the voice playback settings, modify the speed and pitch of the voice,  in some languages, select a male or female voice.  Remember that if you change the voice language to one not supported by the application,  you can provide your own notification content in the selected language.  You can download selected voices to your phone to limit the use of the network connection.</td><td>يمكنك ضبط إعدادات تشغيل الصوت، وتعديل سرعة الصوت ودرجة نبرته،  وفي بعض اللغات، حدد صوتًا ذكرًا أو أنثى.  تذكر أنه إذا غيرت لغة الصوت إلى لغة غير مدعومة من قبل التطبيق،  فيمكنك تقديم محتوى الإشعارات الخاص بك باللغة المحددة.  يمكنك تنزيل الأصوات المحددة على هاتفك للحد من استخدام اتصال الشبكة.</td></tr>
+			<tr><td>help_text_04_01</td><td>You can adjust the voice playback settings, modify the speed and pitch of the voice,</td><td>يمكنك ضبط إعدادات تشغيل الصوت، وتعديل سرعة الصوت ودرجة نبرته،</td></tr>
+			<tr><td>help_text_04_02</td><td>in some languages, select a male or female voice.</td><td>وفي بعض اللغات، حدد صوتًا ذكرًا أو أنثى.</td></tr>
+			<tr><td>help_text_04_03</td><td>Remember that if you change the voice language to one not supported by the application,</td><td>تذكر أنه إذا غيرت لغة الصوت إلى لغة غير مدعومة من قبل التطبيق،</td></tr>
+			<tr><td>help_text_04_04</td><td>you can provide your own notification content in the selected language.</td><td>فيمكنك تقديم محتوى الإشعارات الخاص بك باللغة المحددة.</td></tr>
+			<tr><td>help_text_04_05</td><td>You can download selected voices to your phone to limit the use of the network connection.</td><td>يمكنك تنزيل الأصوات المحددة على هاتفك للحد من استخدام اتصال الشبكة.</td></tr>
 			<tr><td>help_title_05</td><td>Notification settings</td><td>إعدادات الإشعارات</td></tr>
-			<tr><td>help_text_05</td><td>Periodic notification on time enables notification of the battery status regularly at selected intervals.  Notification on the phone's unlock button triggers a notification after pressing the phone's power button.  You can add the current time to notifications.  This is a useful feature if you walk or run with your phone, and you do not want to check the time on the screen.</td><td>يتيح الإشعار الدوري في الوقت المحدد إرسال إشعار بحالة البطارية بانتظام على فترات زمنية محددة.  يؤدي الإشعار الموجود على زر إلغاء قفل الهاتف إلى تشغيل إشعار بعد الضغط على زر الطاقة في الهاتف.  يمكنك إضافة الوقت الحالي إلى الإشعارات.  هذه ميزة مفيدة إذا كنت تمشي أو تركض بهاتفك، ولا تريد التحقق من الوقت على الشاشة.</td></tr>
+			<tr><td>help_text_05_01</td><td>Periodic notification on time enables notification of the battery status regularly at selected intervals.</td><td>يتيح الإشعار الدوري في الوقت المحدد إرسال إشعار بحالة البطارية بانتظام على فترات زمنية محددة.</td></tr>
+			<tr><td>help_text_05_02</td><td>Notification on the phone's unlock button triggers a notification after pressing the phone's power button.</td><td>يؤدي الإشعار الموجود على زر إلغاء قفل الهاتف إلى تشغيل إشعار بعد الضغط على زر الطاقة في الهاتف.</td></tr>
+			<tr><td>help_text_05_03</td><td>You can add the current time to notifications.</td><td>يمكنك إضافة الوقت الحالي إلى الإشعارات.</td></tr>
+			<tr><td>help_text_05_04</td><td>This is a useful feature if you walk or run with your phone, and you do not want to check the time on the screen.</td><td>هذه ميزة مفيدة إذا كنت تمشي أو تركض بهاتفك، ولا تريد التحقق من الوقت على الشاشة.</td></tr>
 			<tr><td>tips_title_01</td><td>Adjust screen timeout and brightness</td><td>ضبط مهلة الشاشة وسطوعها</td></tr>
-			<tr><td>tips_text_01</td><td>The screen is the biggest battery drain on your phone, consuming up to 70% of the power.  Shorten the screen timeout duration to ensure the screen turns off quickly when not in use.  Lower the screen brightness or turn on adaptive brightness to optimize power consumption.  For phones with OLED or AMOLED screens, using the dark display mode and dark wallpaper settings can save energy,  because these screens illuminate individual pixels.  Remove unnecessary widgets from your home screen, as they can consume resources and drain the battery.</td><td>الشاشة هي أكبر مستهلك للبطارية في هاتفك، حيث تستهلك ما يصل إلى 70% من الطاقة.  قم بتقصير مدة مهلة الشاشة لضمان إيقاف تشغيل الشاشة بسرعة عند عدم استخدامها.  قم بخفض سطوع الشاشة أو تشغيل السطوع التكيفي لتحسين استهلاك الطاقة.  بالنسبة للهواتف التي تحتوي على شاشات OLED أو AMOLED، فإن استخدام وضع العرض الداكن وإعدادات الخلفية الداكنة يمكن أن يوفر الطاقة،  لأن هذه الشاشات تضيء وحدات البكسل الفردية.  قم بإزالة الأدوات غير الضرورية من الشاشة الرئيسية، حيث يمكنها استهلاك الموارد واستنزاف البطارية.</td></tr>
+			<tr><td>tips_text_01_01</td><td>The screen is the biggest battery drain on your phone, consuming up to 70% of the power.</td><td>الشاشة هي أكبر مستهلك للبطارية في هاتفك، حيث تستهلك ما يصل إلى 70% من الطاقة.</td></tr>
+			<tr><td>tips_text_01_02</td><td>Shorten the screen timeout duration to ensure the screen turns off quickly when not in use.</td><td>قم بتقصير مدة مهلة الشاشة لضمان إيقاف تشغيل الشاشة بسرعة عند عدم استخدامها.</td></tr>
+			<tr><td>tips_text_01_03</td><td>Lower the screen brightness or turn on adaptive brightness to optimize power consumption.</td><td>قم بخفض سطوع الشاشة أو تشغيل السطوع التكيفي لتحسين استهلاك الطاقة.</td></tr>
+			<tr><td>tips_text_01_04</td><td>For phones with OLED or AMOLED screens, using the dark display mode and dark wallpaper settings can save energy,</td><td>بالنسبة للهواتف التي تحتوي على شاشات OLED أو AMOLED، فإن استخدام وضع العرض الداكن وإعدادات الخلفية الداكنة يمكن أن يوفر الطاقة،</td></tr>
+			<tr><td>tips_text_01_05</td><td>because these screens illuminate individual pixels.</td><td>لأن هذه الشاشات تضيء وحدات البكسل الفردية.</td></tr>
+			<tr><td>tips_text_01_06</td><td>Remove unnecessary widgets from your home screen, as they can consume resources and drain the battery.</td><td>قم بإزالة الأدوات غير الضرورية من الشاشة الرئيسية، حيث يمكنها استهلاك الموارد واستنزاف البطارية.</td></tr>
 			<tr><td>tips_title_02</td><td>Turn off unused connections</td><td>قم بإيقاف تشغيل الاتصالات غير المستخدمة</td></tr>
-			<tr><td>tips_text_02</td><td>Consider temporarily disabling external connections if they are not in use or needed.  If enabled, they will try to restore broken connections, search for new available connections,  download current data, which drains the battery.  These connections are:  * Bluetooth communication (used for example to connect speakers, headphones)  * GPS location (used by applications, for example to determine location, address)  * Mobile Data and Wi-Fi network (used to connect to the Internet and download current data - notifications, emails)</td><td>فكر في تعطيل الاتصالات الخارجية مؤقتًا إذا لم تكن قيد الاستخدام أو مطلوبة.  إذا تم تمكينها، فستحاول استعادة الاتصالات المقطوعة، والبحث عن اتصالات جديدة متاحة،  وتنزيل البيانات الحالية، مما يؤدي إلى استنزاف البطارية.  هذه الاتصالات هي:  * اتصال Bluetooth (يستخدم على سبيل المثال لتوصيل مكبرات الصوت وسماعات الرأس)  * موقع GPS (يستخدمه التطبيقات، على سبيل المثال لتحديد الموقع والعنوان)  * بيانات الجوال وشبكة Wi-Fi (تستخدم للاتصال بالإنترنت وتنزيل البيانات الحالية - الإشعارات ورسائل البريد الإلكتروني)</td></tr>
+			<tr><td>tips_text_02_01</td><td>Consider temporarily disabling external connections if they are not in use or needed.</td><td>فكر في تعطيل الاتصالات الخارجية مؤقتًا إذا لم تكن قيد الاستخدام أو مطلوبة.</td></tr>
+			<tr><td>tips_text_02_02</td><td>If enabled, they will try to restore broken connections, search for new available connections,</td><td>إذا تم تمكينها، فستحاول استعادة الاتصالات المقطوعة، والبحث عن اتصالات جديدة متاحة،</td></tr>
+			<tr><td>tips_text_02_03</td><td>download current data, which drains the battery.</td><td>وتنزيل البيانات الحالية، مما يؤدي إلى استنزاف البطارية.</td></tr>
+			<tr><td>tips_text_02_04</td><td>These connections are:</td><td>هذه الاتصالات هي:</td></tr>
+			<tr><td>tips_text_02_05</td><td>* Bluetooth communication (used for example to connect speakers, headphones)</td><td>* اتصال Bluetooth (يستخدم على سبيل المثال لتوصيل مكبرات الصوت وسماعات الرأس)</td></tr>
+			<tr><td>tips_text_02_06</td><td>* GPS location (used by applications, for example to determine location, address)</td><td>* موقع GPS (يستخدمه التطبيقات، على سبيل المثال لتحديد الموقع والعنوان)</td></tr>
+			<tr><td>tips_text_02_07</td><td>* Mobile Data and Wi-Fi network (used to connect to the Internet and download current data - notifications, emails)</td><td>* بيانات الجوال وشبكة Wi-Fi (تستخدم للاتصال بالإنترنت وتنزيل البيانات الحالية - الإشعارات ورسائل البريد الإلكتروني)</td></tr>
 			<tr><td>tips_title_03</td><td>Manage background applications</td><td>إدارة تطبيقات الخلفية</td></tr>
-			<tr><td>tips_text_03</td><td>Some applications use more power than others.  To identify these applications, go to phone settings and search for battery settings sections,  where you will find accurate reports of energy use by applications.  Review the settings for your most energy-consuming applications.  There you will find a number of options that will limit the application's operation in the background,  such as disabling notifications and background data refreshing, or energy saving profiles.</td><td>تستخدم بعض التطبيقات طاقة أكثر من غيرها.  لتحديد هذه التطبيقات، انتقل إلى إعدادات الهاتف وابحث عن أقسام إعدادات البطارية،  حيث ستجد تقارير دقيقة عن استخدام الطاقة من قبل التطبيقات.  راجع إعدادات التطبيقات الأكثر استهلاكًا للطاقة.  ستجد هناك عددًا من الخيارات التي ستحد من تشغيل التطبيق في الخلفية،  مثل تعطيل الإشعارات وتحديث بيانات الخلفية، أو ملفات تعريف توفير الطاقة.</td></tr>
+			<tr><td>tips_text_03_01</td><td>Some applications use more power than others.</td><td>تستخدم بعض التطبيقات طاقة أكثر من غيرها.</td></tr>
+			<tr><td>tips_text_03_02</td><td>To identify these applications, go to phone settings and search for battery settings sections,</td><td>لتحديد هذه التطبيقات، انتقل إلى إعدادات الهاتف وابحث عن أقسام إعدادات البطارية،</td></tr>
+			<tr><td>tips_text_03_03</td><td>where you will find accurate reports of energy use by applications.</td><td>حيث ستجد تقارير دقيقة عن استخدام الطاقة من قبل التطبيقات.</td></tr>
+			<tr><td>tips_text_03_04</td><td>Review the settings for your most energy-consuming applications.</td><td>راجع إعدادات التطبيقات الأكثر استهلاكًا للطاقة.</td></tr>
+			<tr><td>tips_text_03_05</td><td>There you will find a number of options that will limit the application's operation in the background,</td><td>ستجد هناك عددًا من الخيارات التي ستحد من تشغيل التطبيق في الخلفية،</td></tr>
+			<tr><td>tips_text_03_06</td><td>such as disabling notifications and background data refreshing, or energy saving profiles.</td><td>مثل تعطيل الإشعارات وتحديث بيانات الخلفية، أو ملفات تعريف توفير الطاقة.</td></tr>
 			<tr><td>tips_title_04</td><td>Battery saving modes</td><td>أوضاع توفير البطارية</td></tr>
-			<tr><td>tips_text_04</td><td>Some phones have special power saving modes.  They limit some phone functions, but they allow you to significantly extend battery life.  Find and try them on your phone.  You will be able to use them in an emergency situation.</td><td>تحتوي بعض الهواتف على أوضاع خاصة لتوفير الطاقة.  تحد هذه الأوضاع من بعض وظائف الهاتف، ولكنها تسمح لك بإطالة عمر البطارية بشكل كبير.  ابحث عنها وجربها على هاتفك.  ستتمكن من استخدامها في حالة الطوارئ.</td></tr>
+			<tr><td>tips_text_04_01</td><td>Some phones have special power saving modes.</td><td>تحتوي بعض الهواتف على أوضاع خاصة لتوفير الطاقة.</td></tr>
+			<tr><td>tips_text_04_02</td><td>They limit some phone functions, but they allow you to significantly extend battery life.</td><td>تحد هذه الأوضاع من بعض وظائف الهاتف، ولكنها تسمح لك بإطالة عمر البطارية بشكل كبير.</td></tr>
+			<tr><td>tips_text_04_03</td><td>Find and try them on your phone.</td><td>ابحث عنها وجربها على هاتفك.</td></tr>
+			<tr><td>tips_text_04_04</td><td>You will be able to use them in an emergency situation.</td><td>ستتمكن من استخدامها في حالة الطوارئ.</td></tr>
 			<tr><td>tips_title_05</td><td>Limit usage of energy consuming apps</td><td>حد من استخدام التطبيقات المستهلكة للطاقة</td></tr>
-			<tr><td>tips_text_05</td><td>Be aware that some applications are more energy consuming than others.  Video playback is one of the most battery-intensive activities on a smartphone.  To save battery, you can limit the amount of time you spend watching videos, or you can switch to a lower-resolution format.  Other energy hungry applications are 3D games and navigation applications.</td><td>كن على دراية بأن بعض التطبيقات تستهلك طاقة أكثر من غيرها.  يعد تشغيل الفيديو أحد أكثر الأنشطة استهلاكًا للبطارية على الهواتف الذكية.  لتوفير البطارية، يمكنك الحد من الوقت الذي تقضيه في مشاهدة مقاطع الفيديو، أو يمكنك التبديل إلى تنسيق أقل دقة.  من التطبيقات الأخرى التي تستهلك الكثير من الطاقة الألعاب ثلاثية الأبعاد وتطبيقات الملاحة.</td></tr>
+			<tr><td>tips_text_05_01</td><td>Be aware that some applications are more energy consuming than others.</td><td>كن على دراية بأن بعض التطبيقات تستهلك طاقة أكثر من غيرها.</td></tr>
+			<tr><td>tips_text_05_02</td><td>Video playback is one of the most battery-intensive activities on a smartphone.</td><td>يعد تشغيل الفيديو أحد أكثر الأنشطة استهلاكًا للبطارية على الهواتف الذكية.</td></tr>
+			<tr><td>tips_text_05_03</td><td>To save battery, you can limit the amount of time you spend watching videos, or you can switch to a lower-resolution format.</td><td>لتوفير البطارية، يمكنك الحد من الوقت الذي تقضيه في مشاهدة مقاطع الفيديو، أو يمكنك التبديل إلى تنسيق أقل دقة.</td></tr>
+			<tr><td>tips_text_05_04</td><td>Other energy hungry applications are 3D games and navigation applications.</td><td>من التطبيقات الأخرى التي تستهلك الكثير من الطاقة الألعاب ثلاثية الأبعاد وتطبيقات الملاحة.</td></tr>
 			<tr><td>tips_title_06</td><td>Update your phone's software</td><td>تحديث برنامج هاتفك</td></tr>
-			<tr><td>tips_text_06</td><td>Phone manufacturers often release software updates that include bug fixes and performance improvements.  These updates can also help to improve your phone's battery life.  Make sure to check for and install updates regularly.</td><td>غالبًا ما يصدر مصنعو الهواتف تحديثات برمجية تتضمن إصلاحات للأخطاء وتحسينات في الأداء.  يمكن أن تساعد هذه التحديثات أيضًا في تحسين عمر بطارية هاتفك.  تأكد من التحقق من التحديثات وتثبيتها بانتظام.</td></tr>
+			<tr><td>tips_text_06_01</td><td>Phone manufacturers often release software updates that include bug fixes and performance improvements.</td><td>غالبًا ما يصدر مصنعو الهواتف تحديثات برمجية تتضمن إصلاحات للأخطاء وتحسينات في الأداء.</td></tr>
+			<tr><td>tips_text_06_02</td><td>These updates can also help to improve your phone's battery life.</td><td>يمكن أن تساعد هذه التحديثات أيضًا في تحسين عمر بطارية هاتفك.</td></tr>
+			<tr><td>tips_text_06_03</td><td>Make sure to check for and install updates regularly.</td><td>تأكد من التحقق من التحديثات وتثبيتها بانتظام.</td></tr>
 			<tr><td>tips_title_07</td><td>Restart your phone</td><td>أعد تشغيل هاتفك</td></tr>
-			<tr><td>tips_text_07</td><td>Restart your phone periodically to close background processes, release memory, clean temporary data and refresh the system.  It is advisable to restart your phone once a week.</td><td>أعد تشغيل هاتفك بشكل دوري لإغلاق العمليات الخلفية، وتحرير الذاكرة، وتنظيف البيانات المؤقتة وتحديث النظام.  من المستحسن إعادة تشغيل هاتفك مرة واحدة في الأسبوع.</td></tr>
+			<tr><td>tips_text_07_01</td><td>Restart your phone periodically to close background processes, release memory, clean temporary data and refresh the system.</td><td>أعد تشغيل هاتفك بشكل دوري لإغلاق العمليات الخلفية، وتحرير الذاكرة، وتنظيف البيانات المؤقتة وتحديث النظام.</td></tr>
+			<tr><td>tips_text_07_02</td><td>It is advisable to restart your phone once a week.</td><td>من المستحسن إعادة تشغيل هاتفك مرة واحدة في الأسبوع.</td></tr>
 			<tr><td>tips_title_08</td><td>Turn off vibrations and sounds</td><td>إيقاف تشغيل الاهتزازات والأصوات</td></tr>
-			<tr><td>tips_text_08</td><td>Disable haptic feedback and unnecessary vibrations for notification, incoming call or sms, as they can contribute to battery drain.  Turn off unnecessary system sounds, e.g. when typing on the keyboard.</td><td>قم بتعطيل ردود الفعل اللمسية والاهتزازات غير الضرورية للإشعارات أو المكالمات الواردة أو الرسائل القصيرة، حيث يمكن أن تساهم في استنزاف البطارية.  أوقف تشغيل أصوات النظام غير الضرورية، على سبيل المثال عند الكتابة على لوحة المفاتيح.</td></tr>
+			<tr><td>tips_text_08_01</td><td>Disable haptic feedback and unnecessary vibrations for notification, incoming call or sms, as they can contribute to battery drain.</td><td>قم بتعطيل ردود الفعل اللمسية والاهتزازات غير الضرورية للإشعارات أو المكالمات الواردة أو الرسائل القصيرة، حيث يمكن أن تساهم في استنزاف البطارية.</td></tr>
+			<tr><td>tips_text_08_02</td><td>Turn off unnecessary system sounds, e.g. when typing on the keyboard.</td><td>أوقف تشغيل أصوات النظام غير الضرورية، على سبيل المثال عند الكتابة على لوحة المفاتيح.</td></tr>
 			<tr><td>tips_title_09</td><td>Use a portable charger</td><td>استخدم شاحنًا محمولًا</td></tr>
-			<tr><td>tips_text_09</td><td>If you're going to be away from an outlet for a long time, consider using a portable charger to keep your phone charged.  Portable chargers are small, lightweight, and can be easily carried in a purse or backpack.</td><td>إذا كنت ستبتعد عن منفذ كهربائي لفترة طويلة، ففكر في استخدام شاحن محمول للحفاظ على شحن هاتفك.  تتميز الشواحن المحمولة بأنها صغيرة وخفيفة الوزن ويمكن حملها بسهولة في حقيبة اليد أو حقيبة الظهر.</td></tr>
+			<tr><td>tips_text_09_01</td><td>If you're going to be away from an outlet for a long time, consider using a portable charger to keep your phone charged.</td><td>إذا كنت ستبتعد عن منفذ كهربائي لفترة طويلة، ففكر في استخدام شاحن محمول للحفاظ على شحن هاتفك.</td></tr>
+			<tr><td>tips_text_09_02</td><td>Portable chargers are small, lightweight, and can be easily carried in a purse or backpack.</td><td>تتميز الشواحن المحمولة بأنها صغيرة وخفيفة الوزن ويمكن حملها بسهولة في حقيبة اليد أو حقيبة الظهر.</td></tr>
 			<tr><td>tips_title_10</td><td>Avoid extreme temperatures</td><td>تجنب درجات الحرارة العالية</td></tr>
-			<tr><td>tips_text_10</td><td>Keep your phone at moderate temperatures, as both extreme heat and cold can affect battery performance and reduce its lifespan.  To keep your phone cool, avoid leaving it in direct sunlight or in hot cars.  You can also use a case that helps to keep your phone cool.</td><td>احتفظ بهاتفك في درجات حرارة معتدلة، حيث يمكن للحرارة والبرودة الشديدتين أن تؤثر على أداء البطارية وتقلل من عمرها الافتراضي.  للحفاظ على برودة هاتفك، تجنب تركه في ضوء الشمس المباشر أو في السيارات الساخنة.  يمكنك أيضًا استخدام حافظة تساعد في الحفاظ على برودة هاتفك.</td></tr>
+			<tr><td>tips_text_10_01</td><td>Keep your phone at moderate temperatures, as both extreme heat and cold can affect battery performance and reduce its lifespan.</td><td>احتفظ بهاتفك في درجات حرارة معتدلة، حيث يمكن للحرارة والبرودة الشديدتين أن تؤثر على أداء البطارية وتقلل من عمرها الافتراضي.</td></tr>
+			<tr><td>tips_text_10_02</td><td>To keep your phone cool, avoid leaving it in direct sunlight or in hot cars.</td><td>للحفاظ على برودة هاتفك، تجنب تركه في ضوء الشمس المباشر أو في السيارات الساخنة.</td></tr>
+			<tr><td>tips_text_10_03</td><td>You can also use a case that helps to keep your phone cool.</td><td>يمكنك أيضًا استخدام حافظة تساعد في الحفاظ على برودة هاتفك.</td></tr>
 		</tbody>
 	</table>
 

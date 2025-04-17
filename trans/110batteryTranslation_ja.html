@@ -87,6 +87,7 @@
 			<tr><td>screen_lock</td><td>Screen lock</td><td>スクリーンロック</td></tr>
 			<tr><td>full_screen</td><td>Full screen</td><td>全画面表示</td></tr>
 			<tr><td>turn_sound_on</td><td>Turn on the sound</td><td>サウンドをオンにしてください</td></tr>
+			<tr><td>check_FAQ</td><td>Check FAQ on webpage for more information</td><td>詳細については、ウェブページのFAQを確認してください</td></tr>
 			<tr><td>translation_word</td><td>translation</td><td>翻訳</td></tr>
 			<tr><td>male_word</td><td>male</td><td>男性</td></tr>
 			<tr><td>female_word</td><td>female</td><td>女性</td></tr>
@@ -128,6 +129,9 @@
 			<tr><td>preference_on_event_time_minutes</td><td>On time repetition period (in minutes)</td><td>時間通りの繰り返し期間（分単位）</td></tr>
 			<tr><td>preferences_background_title</td><td>Background activity</td><td>バックグラウンド アクティビティ</td></tr>
 			<tr><td>preference_background_service</td><td>Run service</td><td>サービスの実行</td></tr>
+			<tr><td>preference_background_autostart</td><td>Automatic start after device restart</td><td>デバイス再起動後の自動起動</td></tr>
+			<tr><td>preference_silent_mode</td><td>Automatically mute when device sound is turned off</td><td>デバイスのサウンドがオフになっているときに自動的にミュートする</td></tr>
+			<tr><td>preference_device_audio_off</td><td>The device sound is turned off</td><td>デバイスのサウンドがオフになっています</td></tr>
 			<tr><td>event_icon</td><td>Icon</td><td>アイコン</td></tr>
 			<tr><td>event_active</td><td>Active</td><td>アクティブ</td></tr>
 			<tr><td>event_inactive</td><td>Inactive</td><td>非活性</td></tr>
@@ -179,13 +183,13 @@
 			<tr><td>battery_health_unspecified_failure</td><td>Warning battery damage</td><td>バッテリーの損傷に関する警告</td></tr>
 			<tr><td>battery_health_cold</td><td>Warning battery cold</td><td>警告バッテリーが冷えています</td></tr>
 			<tr><td>battery_plugged_title</td><td>Charger</td><td>充電器</td></tr>
-			<tr><td>battery_plugged_unknown</td><td>Connection status unknown</td><td>接続状態が不明</td></tr>
-			<tr><td>battery_plugged_none</td><td>Phone not connected</td><td>電話が接続されていません</td></tr>
-			<tr><td>battery_plugged_ac</td><td>Phone connected to power</td><td>電話機が電源に接続されている</td></tr>
-			<tr><td>battery_plugged_usb</td><td>Phone connected to usb</td><td>USB に接続された電話</td></tr>
-			<tr><td>battery_plugged_wireless</td><td>Phone connected wireless</td><td>電話はワイヤレスで接続されています</td></tr>
-			<tr><td>battery_plugged_dock</td><td>Phone connected to station</td><td>駅に接続された電話</td></tr>
-			<tr><td>battery_plugged_other</td><td>Phone connected differently</td><td>電話の接続方法が異なる</td></tr>
+			<tr><td>battery_plugged_unknown</td><td>Connection status unknown</td><td>接続状態が不明です</td></tr>
+			<tr><td>battery_plugged_none</td><td>Not connected</td><td>接続されていません</td></tr>
+			<tr><td>battery_plugged_ac</td><td>Connected to power</td><td>電源に接続されています</td></tr>
+			<tr><td>battery_plugged_usb</td><td>Connected to USB</td><td>USB に接続されています</td></tr>
+			<tr><td>battery_plugged_wireless</td><td>Connected wireless</td><td>ワイヤレスに接続されています</td></tr>
+			<tr><td>battery_plugged_dock</td><td>Connected to station</td><td>ステーションに接続されています</td></tr>
+			<tr><td>battery_plugged_other</td><td>Connected differently</td><td>別の方法で接続されています</td></tr>
 			<tr><td>sound_default</td><td>default</td><td>デフォルト</td></tr>
 			<tr><td>sound_type_animal</td><td>animal</td><td>動物</td></tr>
 			<tr><td>sound_cat</td><td>cat</td><td>猫</td></tr>
@@ -222,6 +226,8 @@
 			<tr><td>sound_type_technology</td><td>technology</td><td>テクノロジー</td></tr>
 			<tr><td>sound_bonus</td><td>bonus</td><td>ボーナス</td></tr>
 			<tr><td>sound_transformer</td><td>transformer</td><td>変成器</td></tr>
+			<tr><td>speech_missing_engines</td><td>Install additional speech engines</td><td>追加の音声エンジンをインストールします</td></tr>
+			<tr><td>speech_missing_voices</td><td>Download additional speech voices</td><td>追加の音声ボイスをダウンロードします</td></tr>
 			<tr><td>speech_hour</td><td>Hour</td><td>時間</td></tr>
 			<tr><td>speech_date</td><td>Date</td><td>日付</td></tr>
 			<tr><td>speech_msg_nothing_to_say</td><td>I have nothing to say</td><td>何も言うことはない</td></tr>
@@ -274,66 +280,121 @@
 			<tr><td>face_mouth</td><td>This is my mouth</td><td>これは私の口です</td></tr>
 			<tr><td>face_hand</td><td>This is my hand</td><td>これは私の手です</td></tr>
 			<tr><td>face_drink</td><td>This is juice</td><td>これはジュースです</td></tr>
-			<tr><td>app_introduction_item00</td><td>Thank you for installing application, please listen to introduction</td><td>アプリケーションをインストールしていただきありがとうございます。紹介を聞いてください</td></tr>
-			<tr><td>app_introduction_item01</td><td>Application presents detailed battery parameters</td><td>アプリケーションは詳細なバッテリーパラメータを表示します</td></tr>
-			<tr><td>app_introduction_item02</td><td>and notifies with sound or voice about changes in</td><td>変化を音や音声でお知らせします。</td></tr>
-			<tr><td>app_introduction_item03</td><td>battery charge level</td><td>バッテリー充電レベル</td></tr>
-			<tr><td>app_introduction_item04</td><td>battery health</td><td>バッテリーの状態</td></tr>
-			<tr><td>app_introduction_item05</td><td>connected charger</td><td>接続された充電器</td></tr>
-			<tr><td>app_introduction_item11</td><td>Here you can modify sound settings</td><td>ここでサウンド設定を変更できます</td></tr>
-			<tr><td>app_introduction_item12</td><td>turn off the sound</td><td>音を消して</td></tr>
-			<tr><td>app_introduction_item13</td><td>or change various voice parameters such as type, speed or pitch</td><td>または、種類、速度、ピッチなどのさまざまな音声パラメータを変更します</td></tr>
-			<tr><td>app_introduction_item14</td><td>I can speak fast</td><td>私は速く話すことができます</td></tr>
-			<tr><td>app_introduction_item15</td><td>or I can speak slow</td><td>またはゆっくり話せます</td></tr>
-			<tr><td>app_introduction_item16</td><td>You can download voices, to limit your network connection usage</td><td>音声をダウンロードして、ネットワーク接続の使用を制限できます</td></tr>
-			<tr><td>app_introduction_item21</td><td>You can customize the sounds and content of voice messages</td><td>音声メッセージのサウンドと内容をカスタマイズできます</td></tr>
-			<tr><td>app_introduction_item22</td><td>for example the application might say</td><td>例えば、アプリケーションには次のように書かれています</td></tr>
-			<tr><td>app_introduction_item23</td><td>Dear Peter, your phone [Build.BRAND] is fully charged, you can disconnect the charger</td><td>親愛なるピーター、あなたの携帯電話 [Build.BRAND] は完全に充電されています。充電器を取り外しても大丈夫です</td></tr>
-			<tr><td>app_introduction_item31</td><td>Here you can switch to full screen view</td><td>ここで全画面表示に切り替えることができます</td></tr>
-			<tr><td>app_introduction_item32</td><td>and here you can change appearance of the application to</td><td>ここでアプリケーションの外観を変更できます</td></tr>
-			<tr><td>app_introduction_item33</td><td>clean battery</td><td>きれいなバッテリー</td></tr>
-			<tr><td>app_introduction_item34</td><td>battery with face animation</td><td>顔アニメーション付きバッテリー</td></tr>
-			<tr><td>app_introduction_item35</td><td>or battery with detailed parameters such as</td><td>またはバッテリーなどの詳細なパラメータ</td></tr>
-			<tr><td>app_introduction_item36</td><td>charge level</td><td>充電レベル</td></tr>
-			<tr><td>app_introduction_item37</td><td>temperature</td><td>温度</td></tr>
-			<tr><td>app_introduction_item38</td><td>voltage</td><td>電圧</td></tr>
-			<tr><td>app_introduction_item39</td><td>charging current on some phones</td><td>一部の携帯電話の充電電流</td></tr>
-			<tr><td>app_introduction_item40</td><td>and their minimum, average and maximum values</td><td>およびその最小値、平均値、最大値</td></tr>
-			<tr><td>app_introduction_item51</td><td>Use this button to prevent the screen from turning off</td><td>画面がオフになるのを防ぐには、このボタンを使用します</td></tr>
-			<tr><td>app_introduction_item52</td><td>and here you can set additional application parameters such as</td><td>ここで、次のような追加のアプリケーションパラメータを設定できます。</td></tr>
-			<tr><td>app_introduction_item53</td><td>periodic notifications on time, or after pressing the unlock button</td><td>時間通り、またはロック解除ボタンを押した後の定期的な通知</td></tr>
-			<tr><td>app_introduction_item54</td><td>Here you have access to system battery parameters</td><td>ここでシステムバッテリーパラメータにアクセスできます</td></tr>
-			<tr><td>app_introduction_item55</td><td>and here you can check tips how to save energy and keep your battery in good health</td><td>ここでは、エネルギーを節約し、バッテリーを良好な状態に保つためのヒントを確認できます。</td></tr>
+			<tr><td>demo_text_01</td><td>Hi, I am a Talking Battery</td><td>こんにちは、私は話すバッテリーです</td></tr>
+			<tr><td>demo_text_02</td><td>I can notify you by sound or voice about</td><td>サウンドまたは音声で通知できます</td></tr>
+			<tr><td>demo_text_03</td><td>charge level, health and many other battery parameters</td><td>充電レベル、状態、その他の多くのバッテリーパラメータ</td></tr>
+			<tr><td>demo_text_04</td><td>You can customize the messages, so I can say</td><td>メッセージをカスタマイズして、次のように伝えることができます</td></tr>
+			<tr><td>demo_text_05</td><td>Peter, phone charge level is low 20%, connect the charger</td><td>ピーター、電話の充電レベルが 20% 低下しています。充電器を接続してください</td></tr>
+			<tr><td>demo_text_06</td><td>I am happy when I have a lot of energy</td><td>エネルギーがたっぷりあると幸せです</td></tr>
+			<tr><td>demo_text_07</td><td>Listen to tips on how to take care of your battery's health</td><td>バッテリーの状態を管理する方法に関するヒントを聞いてください</td></tr>
+			<tr><td>demo_text_08</td><td>Don't wait, just try me out</td><td>待たずに、ぜひお試しください</td></tr>
+			<tr><td>intro_text_01</td><td>Thank you for installing application, please listen to introduction</td><td>アプリケーションをインストールしていただきありがとうございます。紹介を聞いてください</td></tr>
+			<tr><td>intro_text_02</td><td>Application presents detailed battery parameters</td><td>アプリケーションは詳細なバッテリーパラメータを表示します</td></tr>
+			<tr><td>intro_text_03</td><td>and notifies with sound or voice about changes in</td><td>変化を音や音声でお知らせします。</td></tr>
+			<tr><td>intro_text_04</td><td>battery charge level</td><td>バッテリー充電レベル</td></tr>
+			<tr><td>intro_text_05</td><td>battery health</td><td>バッテリーの状態</td></tr>
+			<tr><td>intro_text_06</td><td>connected charger</td><td>接続された充電器</td></tr>
+			<tr><td>intro_text_07</td><td>Here you can modify sound settings</td><td>ここでサウンド設定を変更できます</td></tr>
+			<tr><td>intro_text_08</td><td>turn off the sound</td><td>音を消して</td></tr>
+			<tr><td>intro_text_09</td><td>or change various voice parameters such as type, speed or pitch</td><td>または、種類、速度、ピッチなどのさまざまな音声パラメータを変更します</td></tr>
+			<tr><td>intro_text_10</td><td>I can speak fast</td><td>私は速く話すことができます</td></tr>
+			<tr><td>intro_text_11</td><td>or I can speak slow</td><td>またはゆっくり話せます</td></tr>
+			<tr><td>intro_text_12</td><td>You can download voices, to limit your network connection usage</td><td>音声をダウンロードして、ネットワーク接続の使用を制限できます</td></tr>
+			<tr><td>intro_text_13</td><td>You can customize the sounds and content of voice messages</td><td>音声メッセージのサウンドと内容をカスタマイズできます</td></tr>
+			<tr><td>intro_text_14</td><td>for example the application might say</td><td>例えば、アプリケーションには次のように書かれています</td></tr>
+			<tr><td>intro_text_15</td><td>Dear Peter, your phone [Build.BRAND] is fully charged, you can disconnect the charger</td><td>親愛なるピーター、あなたの携帯電話 [Build.BRAND] は完全に充電されています。充電器を取り外しても大丈夫です</td></tr>
+			<tr><td>intro_text_16</td><td>Here you can switch to full screen view</td><td>ここで全画面表示に切り替えることができます</td></tr>
+			<tr><td>intro_text_17</td><td>and here you can change appearance of the application to</td><td>ここでアプリケーションの外観を変更できます</td></tr>
+			<tr><td>intro_text_18</td><td>clean battery</td><td>きれいなバッテリー</td></tr>
+			<tr><td>intro_text_19</td><td>battery with face animation</td><td>顔アニメーション付きバッテリー</td></tr>
+			<tr><td>intro_text_20</td><td>or battery with detailed parameters such as</td><td>またはバッテリーなどの詳細なパラメータ</td></tr>
+			<tr><td>intro_text_21</td><td>charge level</td><td>充電レベル</td></tr>
+			<tr><td>intro_text_22</td><td>temperature</td><td>温度</td></tr>
+			<tr><td>intro_text_23</td><td>voltage</td><td>電圧</td></tr>
+			<tr><td>intro_text_24</td><td>charging current on some phones</td><td>一部の携帯電話の充電電流</td></tr>
+			<tr><td>intro_text_25</td><td>and their minimum, average and maximum values</td><td>およびその最小値、平均値、最大値</td></tr>
+			<tr><td>intro_text_26</td><td>Use this button to prevent the screen from turning off</td><td>画面がオフになるのを防ぐには、このボタンを使用します</td></tr>
+			<tr><td>intro_text_27</td><td>and here you can set additional application parameters such as</td><td>ここで、次のような追加のアプリケーションパラメータを設定できます。</td></tr>
+			<tr><td>intro_text_28</td><td>periodic notifications on time, or after pressing the unlock button</td><td>時間通り、またはロック解除ボタンを押した後の定期的な通知</td></tr>
+			<tr><td>intro_text_29</td><td>Here you have access to system battery parameters</td><td>ここでシステムバッテリーパラメータにアクセスできます</td></tr>
+			<tr><td>intro_text_30</td><td>and here you can check tips how to save energy and keep your battery in good health</td><td>ここでは、エネルギーを節約し、バッテリーを良好な状態に保つためのヒントを確認できます。</td></tr>
 			<tr><td>help_title_01</td><td>Application tasks</td><td>アプリケーション タスク</td></tr>
-			<tr><td>help_text_01</td><td>The application monitors the device's battery status, presents detailed battery parameters on the screen  and notifies about the most important parameter changes with sound or voice.  You can precisely customize the content of alarms and notifications.  The battery starts talking to you.</td><td>アプリケーションはデバイスのバッテリー状態を監視し、詳細なバッテリー パラメータを画面に表示し、最も重要なパラメータの変化について音または音声で通知します。  アラームと通知の内容を正確にカスタマイズできます。  バッテリーが話しかけてきます。</td></tr>
+			<tr><td>help_text_01_01</td><td>The application monitors the device's battery status, presents detailed battery parameters on the screen</td><td>アプリケーションはデバイスのバッテリー状態を監視し、詳細なバッテリー パラメータを画面に表示し、最も重要なパラメータの変化について音または音声で通知します。</td></tr>
+			<tr><td>help_text_01_02</td><td>and notifies about the most important parameter changes with sound or voice.</td><td>アラームと通知の内容を正確にカスタマイズできます。</td></tr>
+			<tr><td>help_text_01_03</td><td>You can precisely customize the content of alarms and notifications.</td><td>バッテリーが話しかけてきます。</td></tr>
+			<tr><td>help_text_01_04</td><td>The battery starts talking to you.</td><td>#value_trans</td></tr>
 			<tr><td>help_title_02</td><td>Sound (voice) notifications and alarms</td><td>サウンド (音声) 通知とアラーム</td></tr>
-			<tr><td>help_text_02</td><td>You will hear sound notifications when charging, battery health and connected charger changes.  You can activate or disable selected notifications, edit the content and select the notification sound.  To disable only the sound or voice of the notification, tap the sound or speech icon on the notification configuration screen.  For notifications about the charge level, you can specify the detailed range for charging and discharging the phone.  You can also use continuous notification about changes in charge,  then you will be informed about each change in the charge level from 0 to 100, or in any other specified range.</td><td>充電中、バッテリーの状態、接続された充電器の変化があると、サウンド通知が聞こえます。  選択した通知を有効または無効にしたり、内容を編集したり、通知音を選択したりできます。  通知のサウンドまたは音声のみを無効にするには、通知設定画面でサウンドまたは音声アイコンをタップします。  充電レベルに関する通知については、電話の充電と放電の詳細な範囲を指定できます。  充電の変化に関する継続的な通知を使用することもできます。その場合、0 から 100 まで、または他の指定された範囲での充電レベルの各変化について通知されます。</td></tr>
+			<tr><td>help_text_02_01</td><td>You will hear sound notifications when charging, battery health and connected charger changes.</td><td>充電中、バッテリーの状態、接続された充電器の変化があると、サウンド通知が聞こえます。</td></tr>
+			<tr><td>help_text_02_02</td><td>You can activate or disable selected notifications, edit the content and select the notification sound.</td><td>選択した通知を有効または無効にしたり、内容を編集したり、通知音を選択したりできます。</td></tr>
+			<tr><td>help_text_02_03</td><td>To disable only the sound or voice of the notification, tap the sound or speech icon on the notification configuration screen.</td><td>通知のサウンドまたは音声のみを無効にするには、通知設定画面でサウンドまたは音声アイコンをタップします。</td></tr>
+			<tr><td>help_text_02_04</td><td>For notifications about the charge level, you can specify the detailed range for charging and discharging the phone.</td><td>充電レベルに関する通知については、電話の充電と放電の詳細な範囲を指定できます。</td></tr>
+			<tr><td>help_text_02_05</td><td>You can also use continuous notification about changes in charge,</td><td>充電の変化に関する継続的な通知を使用することもできます。その場合、0 から 100 まで、または他の指定された範囲での充電レベルの各変化について通知されます。</td></tr>
+			<tr><td>help_text_02_06</td><td>then you will be informed about each change in the charge level from 0 to 100, or in any other specified range.</td><td>#value_trans</td></tr>
 			<tr><td>help_title_03</td><td>Battery display modes</td><td>バッテリー表示モード</td></tr>
-			<tr><td>help_text_03</td><td>You can switch the display mode between the view of detailed charge parameters, voltage, temperature,  view of a funny animated face or a clean battery.  You can touch the battery part to read the displayed information aloud.  In the parameters, you can adjust the presentation of average, maximum and minimum values.</td><td>詳細な充電パラメータ、電圧、温度、  面白いアニメーションの顔またはクリーンなバッテリーの表示の間で表示モードを切り替えることができます。  バッテリー部分をタッチすると、表示されている情報を音声で読み上げることができます。  パラメータでは、平均値、最大値、最小値の表示を調整できます。</td></tr>
+			<tr><td>help_text_03_01</td><td>You can switch the display mode between the view of detailed charge parameters, voltage, temperature,</td><td>詳細な充電パラメータ、電圧、温度、</td></tr>
+			<tr><td>help_text_03_02</td><td>view of a funny animated face or a clean battery.</td><td>面白いアニメーションの顔またはクリーンなバッテリーの表示の間で表示モードを切り替えることができます。</td></tr>
+			<tr><td>help_text_03_03</td><td>You can touch the battery part to read the displayed information aloud.</td><td>バッテリー部分をタッチすると、表示されている情報を音声で読み上げることができます。</td></tr>
+			<tr><td>help_text_03_04</td><td>In the parameters, you can adjust the presentation of average, maximum and minimum values.</td><td>パラメータでは、平均値、最大値、最小値の表示を調整できます。</td></tr>
 			<tr><td>help_title_04</td><td>Speech settings</td><td>音声設定</td></tr>
-			<tr><td>help_text_04</td><td>You can adjust the voice playback settings, modify the speed and pitch of the voice,  in some languages, select a male or female voice.  Remember that if you change the voice language to one not supported by the application,  you can provide your own notification content in the selected language.  You can download selected voices to your phone to limit the use of the network connection.</td><td>音声再生設定を調整したり、音声の速度とピッチを変更したり、一部の言語では男性または女性の声を選択したりできます。  音声言語をアプリケーションでサポートされていない言語に変更すると、選択した言語で独自の通知コンテンツを提供できることに注意してください。  選択した音声を携帯電話にダウンロードして、ネットワーク接続の使用を制限できます。</td></tr>
+			<tr><td>help_text_04_01</td><td>You can adjust the voice playback settings, modify the speed and pitch of the voice,</td><td>音声再生設定を調整したり、音声の速度とピッチを変更したり、一部の言語では男性または女性の声を選択したりできます。</td></tr>
+			<tr><td>help_text_04_02</td><td>in some languages, select a male or female voice.</td><td>音声言語をアプリケーションでサポートされていない言語に変更すると、選択した言語で独自の通知コンテンツを提供できることに注意してください。</td></tr>
+			<tr><td>help_text_04_03</td><td>Remember that if you change the voice language to one not supported by the application,</td><td>選択した音声を携帯電話にダウンロードして、ネットワーク接続の使用を制限できます。</td></tr>
+			<tr><td>help_text_04_04</td><td>you can provide your own notification content in the selected language.</td><td>#value_trans</td></tr>
+			<tr><td>help_text_04_05</td><td>You can download selected voices to your phone to limit the use of the network connection.</td><td>#value_trans</td></tr>
 			<tr><td>help_title_05</td><td>Notification settings</td><td>通知設定</td></tr>
-			<tr><td>help_text_05</td><td>Periodic notification on time enables notification of the battery status regularly at selected intervals.  Notification on the phone's unlock button triggers a notification after pressing the phone's power button.  You can add the current time to notifications.  This is a useful feature if you walk or run with your phone, and you do not want to check the time on the screen.</td><td>定期的な通知時間では、選択した間隔で定期的にバッテリーの状態を通知できます。  携帯電話のロック解除ボタンの通知は、携帯電話の電源ボタンを押した後に通知をトリガーします。  通知に現在の時刻を追加できます。  携帯電話を持って歩いたり走ったりするときに、画面で時間を確認したくない場合に便利な機能です。</td></tr>
+			<tr><td>help_text_05_01</td><td>Periodic notification on time enables notification of the battery status regularly at selected intervals.</td><td>定期的な通知時間では、選択した間隔で定期的にバッテリーの状態を通知できます。</td></tr>
+			<tr><td>help_text_05_02</td><td>Notification on the phone's unlock button triggers a notification after pressing the phone's power button.</td><td>携帯電話のロック解除ボタンの通知は、携帯電話の電源ボタンを押した後に通知をトリガーします。</td></tr>
+			<tr><td>help_text_05_03</td><td>You can add the current time to notifications.</td><td>通知に現在の時刻を追加できます。</td></tr>
+			<tr><td>help_text_05_04</td><td>This is a useful feature if you walk or run with your phone, and you do not want to check the time on the screen.</td><td>携帯電話を持って歩いたり走ったりするときに、画面で時間を確認したくない場合に便利な機能です。</td></tr>
 			<tr><td>tips_title_01</td><td>Adjust screen timeout and brightness</td><td>画面のタイムアウトと明るさを調整する</td></tr>
-			<tr><td>tips_text_01</td><td>The screen is the biggest battery drain on your phone, consuming up to 70% of the power.  Shorten the screen timeout duration to ensure the screen turns off quickly when not in use.  Lower the screen brightness or turn on adaptive brightness to optimize power consumption.  For phones with OLED or AMOLED screens, using the dark display mode and dark wallpaper settings can save energy,  because these screens illuminate individual pixels.  Remove unnecessary widgets from your home screen, as they can consume resources and drain the battery.</td><td>画面は携帯電話のバッテリーを最も消耗する部分で、最大 70% の電力を消費します。  画面のタイムアウト時間を短くして、使用していないときに画面がすぐにオフになるようにします。  画面の明るさを下げるか、自動明るさ調整をオンにして、電力消費を最適化します。  OLED または AMOLED 画面の携帯電話の場合、ダーク ディスプレイ モードとダーク壁紙設定を使用すると、個々のピクセルが点灯するため、エネルギーを節約できます。  ホーム画面から不要なウィジェットを削除します。ウィジェットはリソースを消費してバッテリーを消耗する可能性があります。</td></tr>
+			<tr><td>tips_text_01_01</td><td>The screen is the biggest battery drain on your phone, consuming up to 70% of the power.</td><td>画面は携帯電話のバッテリーを最も消耗する部分で、最大 70% の電力を消費します。</td></tr>
+			<tr><td>tips_text_01_02</td><td>Shorten the screen timeout duration to ensure the screen turns off quickly when not in use.</td><td>画面のタイムアウト時間を短くして、使用していないときに画面がすぐにオフになるようにします。</td></tr>
+			<tr><td>tips_text_01_03</td><td>Lower the screen brightness or turn on adaptive brightness to optimize power consumption.</td><td>画面の明るさを下げるか、自動明るさ調整をオンにして、電力消費を最適化します。</td></tr>
+			<tr><td>tips_text_01_04</td><td>For phones with OLED or AMOLED screens, using the dark display mode and dark wallpaper settings can save energy,</td><td>OLED または AMOLED 画面の携帯電話の場合、ダーク ディスプレイ モードとダーク壁紙設定を使用すると、個々のピクセルが点灯するため、エネルギーを節約できます。</td></tr>
+			<tr><td>tips_text_01_05</td><td>because these screens illuminate individual pixels.</td><td>ホーム画面から不要なウィジェットを削除します。ウィジェットはリソースを消費してバッテリーを消耗する可能性があります。</td></tr>
+			<tr><td>tips_text_01_06</td><td>Remove unnecessary widgets from your home screen, as they can consume resources and drain the battery.</td><td>#value_trans</td></tr>
 			<tr><td>tips_title_02</td><td>Turn off unused connections</td><td>未使用の接続をオフにする</td></tr>
-			<tr><td>tips_text_02</td><td>Consider temporarily disabling external connections if they are not in use or needed.  If enabled, they will try to restore broken connections, search for new available connections,  download current data, which drains the battery.  These connections are:  * Bluetooth communication (used for example to connect speakers, headphones)  * GPS location (used by applications, for example to determine location, address)  * Mobile Data and Wi-Fi network (used to connect to the Internet and download current data - notifications, emails)</td><td>使用していない、または必要ない場合は、外部接続を一時的に無効にすることを検討してください。  有効にすると、切断された接続を復元したり、新しい利用可能な接続を検索したり、現在のデータをダウンロードしたりするため、バッテリーが消耗します。  これらの接続は次のとおりです。  * Bluetooth 通信 (スピーカーやヘッドフォンの接続などに使用)  * GPS 位置情報 (アプリケーションで使用、たとえば場所や住所の特定に使用)  * モバイル データと Wi-Fi ネットワーク (インターネットに接続し、通知やメールなどの最新データをダウンロードするために使用)</td></tr>
+			<tr><td>tips_text_02_01</td><td>Consider temporarily disabling external connections if they are not in use or needed.</td><td>使用していない、または必要ない場合は、外部接続を一時的に無効にすることを検討してください。</td></tr>
+			<tr><td>tips_text_02_02</td><td>If enabled, they will try to restore broken connections, search for new available connections,</td><td>有効にすると、切断された接続を復元したり、新しい利用可能な接続を検索したり、現在のデータをダウンロードしたりするため、バッテリーが消耗します。</td></tr>
+			<tr><td>tips_text_02_03</td><td>download current data, which drains the battery.</td><td>これらの接続は次のとおりです。</td></tr>
+			<tr><td>tips_text_02_04</td><td>These connections are:</td><td>* Bluetooth 通信 (スピーカーやヘッドフォンの接続などに使用)</td></tr>
+			<tr><td>tips_text_02_05</td><td>* Bluetooth communication (used for example to connect speakers, headphones)</td><td>* GPS 位置情報 (アプリケーションで使用、たとえば場所や住所の特定に使用)</td></tr>
+			<tr><td>tips_text_02_06</td><td>* GPS location (used by applications, for example to determine location, address)</td><td>* モバイル データと Wi-Fi ネットワーク (インターネットに接続し、通知やメールなどの最新データをダウンロードするために使用)</td></tr>
+			<tr><td>tips_text_02_07</td><td>* Mobile Data and Wi-Fi network (used to connect to the Internet and download current data - notifications, emails)</td><td>#value_trans</td></tr>
 			<tr><td>tips_title_03</td><td>Manage background applications</td><td>バックグラウンド アプリケーションの管理</td></tr>
-			<tr><td>tips_text_03</td><td>Some applications use more power than others.  To identify these applications, go to phone settings and search for battery settings sections,  where you will find accurate reports of energy use by applications.  Review the settings for your most energy-consuming applications.  There you will find a number of options that will limit the application's operation in the background,  such as disabling notifications and background data refreshing, or energy saving profiles.</td><td>一部のアプリケーションは、他のアプリケーションよりも多くの電力を消費します。  これらのアプリケーションを特定するには、電話の設定に移動してバッテリー設定セクションを検索します。  そこで、アプリケーションによる正確なエネルギー使用量のレポートを見つけることができます。  最もエネルギーを消費するアプリケーションの設定を確認します。  そこには、通知やバックグラウンド データ更新の無効化、省電力プロファイルなど、バックグラウンドでのアプリケーションの動作を制限するオプションがいくつかあります。</td></tr>
+			<tr><td>tips_text_03_01</td><td>Some applications use more power than others.</td><td>一部のアプリケーションは、他のアプリケーションよりも多くの電力を消費します。</td></tr>
+			<tr><td>tips_text_03_02</td><td>To identify these applications, go to phone settings and search for battery settings sections,</td><td>これらのアプリケーションを特定するには、電話の設定に移動してバッテリー設定セクションを検索します。</td></tr>
+			<tr><td>tips_text_03_03</td><td>where you will find accurate reports of energy use by applications.</td><td>そこで、アプリケーションによる正確なエネルギー使用量のレポートを見つけることができます。</td></tr>
+			<tr><td>tips_text_03_04</td><td>Review the settings for your most energy-consuming applications.</td><td>最もエネルギーを消費するアプリケーションの設定を確認します。</td></tr>
+			<tr><td>tips_text_03_05</td><td>There you will find a number of options that will limit the application's operation in the background,</td><td>そこには、通知やバックグラウンド データ更新の無効化、省電力プロファイルなど、バックグラウンドでのアプリケーションの動作を制限するオプションがいくつかあります。</td></tr>
+			<tr><td>tips_text_03_06</td><td>such as disabling notifications and background data refreshing, or energy saving profiles.</td><td>#value_trans</td></tr>
 			<tr><td>tips_title_04</td><td>Battery saving modes</td><td>バッテリー節約モード</td></tr>
-			<tr><td>tips_text_04</td><td>Some phones have special power saving modes.  They limit some phone functions, but they allow you to significantly extend battery life.  Find and try them on your phone.  You will be able to use them in an emergency situation.</td><td>一部の電話には特別な省電力モードがあります。  これらのモードでは電話の一部の機能が制限されますが、バッテリー寿命を大幅に延ばすことができます。  お使いの電話でそれらを見つけて試してみてください。  緊急時に使用できます。</td></tr>
+			<tr><td>tips_text_04_01</td><td>Some phones have special power saving modes.</td><td>一部の電話には特別な省電力モードがあります。</td></tr>
+			<tr><td>tips_text_04_02</td><td>They limit some phone functions, but they allow you to significantly extend battery life.</td><td>これらのモードでは電話の一部の機能が制限されますが、バッテリー寿命を大幅に延ばすことができます。</td></tr>
+			<tr><td>tips_text_04_03</td><td>Find and try them on your phone.</td><td>お使いの電話でそれらを見つけて試してみてください。</td></tr>
+			<tr><td>tips_text_04_04</td><td>You will be able to use them in an emergency situation.</td><td>緊急時に使用できます。</td></tr>
 			<tr><td>tips_title_05</td><td>Limit usage of energy consuming apps</td><td>エネルギーを消費するアプリの使用を制限する</td></tr>
-			<tr><td>tips_text_05</td><td>Be aware that some applications are more energy consuming than others.  Video playback is one of the most battery-intensive activities on a smartphone.  To save battery, you can limit the amount of time you spend watching videos, or you can switch to a lower-resolution format.  Other energy hungry applications are 3D games and navigation applications.</td><td>一部のアプリケーションは他のアプリケーションよりも多くのエネルギーを消費することに注意してください。  動画の再生は、スマートフォンで最もバッテリーを消費するアクティビティの 1 つです。  バッテリーを節約するには、動画の視聴時間を制限したり、解像度の低い形式に切り替えたりすることができます。  3D ゲームやナビゲーション アプリケーションも、エネルギーを消費するアプリケーションです。</td></tr>
+			<tr><td>tips_text_05_01</td><td>Be aware that some applications are more energy consuming than others.</td><td>一部のアプリケーションは他のアプリケーションよりも多くのエネルギーを消費することに注意してください。</td></tr>
+			<tr><td>tips_text_05_02</td><td>Video playback is one of the most battery-intensive activities on a smartphone.</td><td>動画の再生は、スマートフォンで最もバッテリーを消費するアクティビティの 1 つです。</td></tr>
+			<tr><td>tips_text_05_03</td><td>To save battery, you can limit the amount of time you spend watching videos, or you can switch to a lower-resolution format.</td><td>バッテリーを節約するには、動画の視聴時間を制限したり、解像度の低い形式に切り替えたりすることができます。</td></tr>
+			<tr><td>tips_text_05_04</td><td>Other energy hungry applications are 3D games and navigation applications.</td><td>3D ゲームやナビゲーション アプリケーションも、エネルギーを消費するアプリケーションです。</td></tr>
 			<tr><td>tips_title_06</td><td>Update your phone's software</td><td>携帯電話のソフトウェアを更新する</td></tr>
-			<tr><td>tips_text_06</td><td>Phone manufacturers often release software updates that include bug fixes and performance improvements.  These updates can also help to improve your phone's battery life.  Make sure to check for and install updates regularly.</td><td>携帯電話メーカーは、バグ修正やパフォーマンス改善を含むソフトウェア アップデートを頻繁にリリースしています。  これらのアップデートは、携帯電話のバッテリー寿命を延ばすのにも役立ちます。  アップデートを定期的に確認してインストールするようにしてください。</td></tr>
+			<tr><td>tips_text_06_01</td><td>Phone manufacturers often release software updates that include bug fixes and performance improvements.</td><td>携帯電話メーカーは、バグ修正やパフォーマンス改善を含むソフトウェア アップデートを頻繁にリリースしています。</td></tr>
+			<tr><td>tips_text_06_02</td><td>These updates can also help to improve your phone's battery life.</td><td>これらのアップデートは、携帯電話のバッテリー寿命を延ばすのにも役立ちます。</td></tr>
+			<tr><td>tips_text_06_03</td><td>Make sure to check for and install updates regularly.</td><td>アップデートを定期的に確認してインストールするようにしてください。</td></tr>
 			<tr><td>tips_title_07</td><td>Restart your phone</td><td>携帯電話を再起動する</td></tr>
-			<tr><td>tips_text_07</td><td>Restart your phone periodically to close background processes, release memory, clean temporary data and refresh the system.  It is advisable to restart your phone once a week.</td><td>バックグラウンド プロセスを終了し、メモリを解放し、一時データを消去して、システムを更新するため、定期的に携帯電話を再起動してください。  週に 1 回は携帯電話を再起動することをお勧めします。</td></tr>
+			<tr><td>tips_text_07_01</td><td>Restart your phone periodically to close background processes, release memory, clean temporary data and refresh the system.</td><td>バックグラウンド プロセスを終了し、メモリを解放し、一時データを消去して、システムを更新するため、定期的に携帯電話を再起動してください。</td></tr>
+			<tr><td>tips_text_07_02</td><td>It is advisable to restart your phone once a week.</td><td>週に 1 回は携帯電話を再起動することをお勧めします。</td></tr>
 			<tr><td>tips_title_08</td><td>Turn off vibrations and sounds</td><td>振動と音をオフにする</td></tr>
-			<tr><td>tips_text_08</td><td>Disable haptic feedback and unnecessary vibrations for notification, incoming call or sms, as they can contribute to battery drain.  Turn off unnecessary system sounds, e.g. when typing on the keyboard.</td><td>通知、着信、SMS の触覚フィードバックや不要な振動は、バッテリーの消耗につながる可能性があるため、無効にしてください。  キーボード入力時などの不要なシステム音をオフにします。</td></tr>
+			<tr><td>tips_text_08_01</td><td>Disable haptic feedback and unnecessary vibrations for notification, incoming call or sms, as they can contribute to battery drain.</td><td>通知、着信、SMS の触覚フィードバックや不要な振動は、バッテリーの消耗につながる可能性があるため、無効にしてください。</td></tr>
+			<tr><td>tips_text_08_02</td><td>Turn off unnecessary system sounds, e.g. when typing on the keyboard.</td><td>キーボード入力時などの不要なシステム音をオフにします。</td></tr>
 			<tr><td>tips_title_09</td><td>Use a portable charger</td><td>ポータブル充電器を使用する</td></tr>
-			<tr><td>tips_text_09</td><td>If you're going to be away from an outlet for a long time, consider using a portable charger to keep your phone charged.  Portable chargers are small, lightweight, and can be easily carried in a purse or backpack.</td><td>コンセントから長時間離れる場合は、携帯電話を充電するためにポータブル充電器の使用を検討してください。  ポータブル充電器は小型で軽量で、ハンドバッグやバックパックに入れて簡単に持ち運ぶことができます。</td></tr>
+			<tr><td>tips_text_09_01</td><td>If you're going to be away from an outlet for a long time, consider using a portable charger to keep your phone charged.</td><td>コンセントから長時間離れる場合は、携帯電話を充電するためにポータブル充電器の使用を検討してください。</td></tr>
+			<tr><td>tips_text_09_02</td><td>Portable chargers are small, lightweight, and can be easily carried in a purse or backpack.</td><td>ポータブル充電器は小型で軽量で、ハンドバッグやバックパックに入れて簡単に持ち運ぶことができます。</td></tr>
 			<tr><td>tips_title_10</td><td>Avoid extreme temperatures</td><td>極端な温度を避ける</td></tr>
-			<tr><td>tips_text_10</td><td>Keep your phone at moderate temperatures, as both extreme heat and cold can affect battery performance and reduce its lifespan.  To keep your phone cool, avoid leaving it in direct sunlight or in hot cars.  You can also use a case that helps to keep your phone cool.</td><td>携帯電話を適度な温度に保ちます。極端な高温や低温はバッテリーのパフォーマンスに影響を与え、寿命を縮める可能性があります。  携帯電話を涼しく保つには、直射日光の当たる場所や暑い車内に放置しないでください。  携帯電話を涼しく保つためのケースを使用することもできます。</td></tr>
+			<tr><td>tips_text_10_01</td><td>Keep your phone at moderate temperatures, as both extreme heat and cold can affect battery performance and reduce its lifespan.</td><td>携帯電話を適度な温度に保ちます。極端な高温や低温はバッテリーのパフォーマンスに影響を与え、寿命を縮める可能性があります。</td></tr>
+			<tr><td>tips_text_10_02</td><td>To keep your phone cool, avoid leaving it in direct sunlight or in hot cars.</td><td>携帯電話を涼しく保つには、直射日光の当たる場所や暑い車内に放置しないでください。</td></tr>
+			<tr><td>tips_text_10_03</td><td>You can also use a case that helps to keep your phone cool.</td><td>携帯電話を涼しく保つためのケースを使用することもできます。</td></tr>
 		</tbody>
 	</table>
 
