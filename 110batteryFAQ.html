@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <title>110kV Software - FAQ</title>
     <link rel="icon" href="imgs/110_logo_128.png">
-    <!-- background-color: lightgrey; -->
+    <!-- background-color: light grey; -->
     <style>
         body {
             font-family: sans-serif;
@@ -36,78 +36,96 @@
     <h2>Frequently Asked Questions (FAQ)</h2>
 
     <table cellspacing="20">
-
         <tr><td>
             <h3>1. Speech settings</h3>
             <ul>
-                <li>System - no change</li>
-                <p>
-                The application will use Android system speech settings (engine, language, voice, speed, pitch),
-                <br/>often called "text to speech" or TTS for short, available in each version of Android system.
-                <br/>The localization depends on the Android version and manufacturer, check for example:
-                <br/>Settings -> General management -> Text-to-speech
-                <br/>Settings -> System -> Language & input -> Text-to-speech output
-                </p>
-
-                <li>Application - (language)</li>
-                <p>
-                When you select this option, which is selected by default,
-                the application will use the system text to speech engine,
-                <br/>but will also try to set the voice language to the same language as the application interface.
-                </p>
-
-                <li>Enter custom</li>
-                <p>
-                To customize own speech settings independent from system, choose this option,
-                <br/>and customize own parameters (engine, language, voice, speed, pitch)
-                directly in application.
-                </p>
+                <li>System - no change
+                    <p>The application will use Android system speech settings (engine, language, voice, speed, pitch),
+                    <br/>often called "text to speech" or TTS for short, available in each version of Android system.
+                    <br/>The localization depends on the Android version and manufacturer, check for example:
+                    <br/>Settings -> General management -> Text-to-speech
+                    <br/>Settings -> System -> Language & input -> Text-to-speech output
+                    </p>
+                </li>
+                <li>Application - (language)
+                    <p>When you select this option, which is selected by default,
+                    the application will use the system text to speech engine,
+                    <br/>but will also try to set the voice language to the same language as the application interface.
+                    </p>
+                </li>
+                <li>Enter custom
+                    <p>To customize own speech settings independent from system, choose this option,
+                    <br/>and customize own parameters (engine, language, voice, speed, pitch)
+                    directly in application.
+                    </p>
+                </li>
             </ul>
         </td></tr>
-
         <tr><td>
             <h3>2. Additional speech engines</h3>
-            <p>
-            Most android devices have pre-installed speech engines.
+            <p>Most android devices have pre-installed speech engines.
+            </p>
             The most common are:
             <ul>
                 <li><a href="https://play.google.com/store/apps/details?id=com.google.android.tts">Google Speech Recognition and Synthesis</a></li>
                 <li><a href="https://galaxystore.samsung.com/detail/com.samsung.SMT?langCd=en">Samsung text-to-speech engine</a></li>
             </ul>
-
-            <br/>You can install additional speech engines and voices of your choice.
-            <br/>Some voices may require additional payment. You can try for example:
+            <p>You can install additional speech engines and voices of your choice.
+            </p>
+            Some voices may require additional payment. You can try for example:
             <ul>
                 <li><a href="https://play.google.com/store/apps/details?id=es.codefactory.vocalizertts">Vocalizer TTS</a></li>
                 <li><a href="https://play.google.com/store/apps/details?id=com.acapelagroup.android.tts">Acapela TTS Voices</a></li>
                 <li><a href="https://play.google.com/store/apps/details?id=com.github.olga_yakovleva.rhvoice.android">RHVoice</a></li>
                 <li><a href="https://play.google.com/store/apps/details?id=com.intu.multilingualtts">Multilingual TTS</a></li>
             </ul>
-            </p>
         </td></tr>
-
         <tr><td>
-            <h3>3. Battery charge status 100% versus full</h3>
-            <p>
-                When you charge your device and it reaches 100% load,
+            <h3>3. Voice notifications about battery health, charging level, connected charger.</h3>
+            <p>The latest version adds the ability to change the interval between voice notifications for charging level and temperature.
+                <br/>Previously, the app repeated the battery level in 1% increments at a predefined interval,
+                which could be too frequent on fast chargers.
+                <br/>Now you can modify this interval yourself. By default, it's set between 5-20% depending on the level,
+                but you can set it to 1%, as in previous versions of the app, or any other value you prefer.
+            </p>
+            <p>Preferences - section <b>Alarms/notifications with sound/voice</b>
+                <br/>The app notifies you with a voice prompt when changes occur or when events such as device unlocking or time change.
+            </p>
+            <ul>
+            <li>Switch <b>Notify on changes in health, charging, charger</b>
+                <p>You'll hear a voice message when a parameter changes,
+                e.g., health status changes, charger connection, charge level changes,
+                or temperature exceeds a certain limit.
+                </p>
+            </li>
+            <li>Switch <b>Notify on unlock button</b>
+                <p>After unlocking the device, you'll hear a full voice message about its health status,
+                connected charger, and detailed charge level.
+                </p>
+            </li>
+            <li>Switch <b>Notify on time</b>
+                <p>You will hear a full voice message at regular intervals, similar to the one for unlocking.
+                </p>
+            </li>
+            </ul>
+        </td></tr>
+        <tr><td>
+            <h3>4. Battery charge status 100% versus full</h3>
+            <p>When you charge your device and it reaches 100% load,
                 <br/>you can see that it will still be in charging state,
                 and you will still see significant charging current (when the device supports).
-
                 <br/>Battery full charge status is when the device finishes charging the battery,
                 you should not see any charging current
                 <br/>and the device starts drawing power directly from the charger.
-
                 <br/>Keep in mind that it may take some time to reach this state
                 and requires the right cable and charger.
                 <br/>We noticed that some devices never reach this state,
                 and some with a long delay.
             </p>
         </td></tr>
-
         <tr><td>
-            <h3>4. Presenting charging current</h3>
-            <p>
-                Not every device shows the correct charging current.
+            <h3>5. Presenting charging current</h3>
+            <p>Not every device shows the correct charging current.
                 <br/>A minus sign (-) before the current should appear during discharging,
                 the absence of the sign means charging, the battery is gaining energy.
                 <br/>It should be noted that some devices can have the opposite logic.
@@ -116,12 +134,9 @@
                 <br/>Just try using a different cable or a charger with higher power.
             </p>
         </td></tr>
-
         <tr><td>
-            <h3>5. Background activity</h3>
-            <p>
-                Remember that every application in the background uses some power.
-
+            <h3>6. Background activity</h3>
+            <p>Remember that every application in the background uses some power.
                 <br/>Every android device has battery saving procedures,
                 that are designed to save battery power.
                 <br/>The system may try to stop some apps from running in the background,
@@ -131,16 +146,45 @@
                 <br/>"Ignore battery optimization"
                 <br/>"Remove from optimized applications"
             </p>
-            <p>
-                <br/>If you only need the application as a charging assistant,
+            <p>If you only need the application as a charging assistant,
                 you can manually close the application once it's done charging.
                 <br/>Use the cross in upper right corner to completely close the application,
-                <br/>along with the notification.
+                along with the notification.
             </p>
+            <p>Preferences - section <b>Background activity</b>
+                <br/>This section controls various parameters of the app's background operation.
+                <br/>The app enters background mode when it's not visible on the screen, for example, after launching another app or locking the phone.
+                While running in the background, the app displays important information in the form of system notifications.
+            </p>
+            <ul>
+            <li>Switch <b>Automatically mute when device sound is turned off</b>
+                <p>The app responds to device muting, for example, by turning off the sound directly or by activating "Do Not Disturb" mode.
+                If the app is not visible, the app's sound will be muted, and the app will stop speaking.
+                <br/>This option is very convenient, for example, when going to sleep or in a meeting.
+                We don't have to search for the app and turn off the sound directly in the app.
+                The app will respond to the device's sound being turned off.
+                </p>
+            </li>
+            <li>Switch <b>Show system notifications</b>
+                <p>This option displays system notifications with basic app information (charge level, health, battery temperature).
+                <br/>You cannot disable this option if you want the app to run in the background.
+                </p>
+            </li>
+            <li>Switch <b>Run background service</b>
+                <p>The app will run as a background service.
+                <br/>For advanced users, you can check the background services in your phone's developer options.
+                You can find instructions on how to enable developer settings in your phone's documentation or search the internet or YouTube.
+                </p>
+            </li>
+            <li>Switch <b>Automatic start after device restart</b>
+                <p>The app will automatically restart after your phone restarts.
+                <br/>Due to background app restrictions, automatic restart may not work on newer Android versions,
+                such as 15 (VanillaIceCream) and 16 (Baklava).
+                </p>
+            </li>
+            </ul>
         </td></tr>
-
     </table>
-
 </center>
 </body>
 </html>
