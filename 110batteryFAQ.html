@@ -37,7 +37,19 @@
 
     <table cellspacing="20">
         <tr><td>
-            <h3>1. Speech settings</h3>
+            <ol>
+                <li><a href="#q1">Speech settings</a></li>
+                <li><a href="#q2">Changing the speech language</a></li>
+                <li><a href="#q3">Downloading a speech language</a></li>
+                <li><a href="#q4">Additional speech engines</a></li>
+                <li><a href="#q5">Voice notifications</a></li>
+                <li><a href="#q6">Battery charge status</a></li>
+                <li><a href="#q7">Presenting charging current</a></li>
+                <li><a href="#q8">Background activity</a></li>
+            </ol>
+        </td></tr>
+        <tr><td>
+            <h3 id="q1">1. Speech settings</h3>
             <ul>
                 <li>System - no change
                     <p>The application will use Android system speech settings (engine, language, voice, speed, pitch),
@@ -62,7 +74,31 @@
             </ul>
         </td></tr>
         <tr><td>
-            <h3>2. Additional speech engines</h3>
+            <h3 id="q2">2. Changing the speech language</h3>
+            <p>The app selects the visible interface language based on your device's language.
+                You can only change the speech language.
+                <br/>To do this, go to the speech settings in the app and select <b>"Enter custom"</b>.
+                <br/>Then, for the selected speech engine, find your language in the list,
+                select it, and test it while connected to the internet to see if you can hear it.
+                <br/>For some speech engines, you may need to download the missing language first.
+                See the next section.
+            </p>
+        </td></tr>
+        <tr><td>
+            <h3 id="q3">3. Downloading a speech language</h3>
+            <p>A speech language downloaded to your device is marked with a <b>(+)</b> sign in the list, an undownloaded language is marked with a <b>(-)</b> sign.
+                <br/>An undownloaded language will require an internet connection for playback.
+                <br/>To download a language from the app, click the <b>"Download"</b> button in the speech settings.
+                If you have multiple speech engines installed, you will be prompted to select a speech engine.
+                <br/>You should then see a list of speech languages for the selected engine.
+                <br/>Click the download button for the selected language.
+                <br/>If your language is not listed,
+                check the speech engine documentation to see if it supports the language you are looking for.
+                <br/>The speech engine usually also allows you to download languages directly from its menu.
+            </p>
+        </td></tr>
+        <tr><td>
+            <h3 id="q4">4. Additional speech engines</h3>
             <p>Most android devices have pre-installed speech engines.
             </p>
             The most common are:
@@ -81,7 +117,7 @@
             </ul>
         </td></tr>
         <tr><td>
-            <h3>3. Voice notifications about battery health, charging level, connected charger.</h3>
+            <h3 id="q5">5. Voice notifications about battery health, charging level, connected charger.</h3>
             <p>The latest version adds the ability to change the interval between voice notifications for charging level and temperature.
                 <br/>Previously, the app repeated the battery level in 1% increments at a predefined interval,
                 which could be too frequent on fast chargers.
@@ -110,7 +146,7 @@
             </ul>
         </td></tr>
         <tr><td>
-            <h3>4. Battery charge status 100% versus full</h3>
+            <h3 id="q6">6. Battery charge status 100% versus full</h3>
             <p>When you charge your device and it reaches 100% load,
                 <br/>you can see that it will still be in charging state,
                 and you will still see significant charging current (when the device supports).
@@ -124,7 +160,7 @@
             </p>
         </td></tr>
         <tr><td>
-            <h3>5. Presenting charging current</h3>
+            <h3 id="q7">7. Presenting charging current</h3>
             <p>Not every device shows the correct charging current.
                 <br/>A minus sign (-) before the current should appear during discharging,
                 the absence of the sign means charging, the battery is gaining energy.
@@ -135,7 +171,7 @@
             </p>
         </td></tr>
         <tr><td>
-            <h3>6. Background activity</h3>
+            <h3 id="q8">8. Background activity</h3>
             <p>Remember that every application in the background uses some power.
                 <br/>Every android device has battery saving procedures,
                 that are designed to save battery power.
