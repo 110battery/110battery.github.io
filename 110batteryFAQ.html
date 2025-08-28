@@ -44,8 +44,9 @@
                 <li><a href="#q4">Additional speech engines</a></li>
                 <li><a href="#q5">Voice notifications</a></li>
                 <li><a href="#q6">Battery charge status</a></li>
-                <li><a href="#q7">Presenting charging current</a></li>
-                <li><a href="#q8">Background activity</a></li>
+                <li><a href="#q7">Presenting charging time</a></li>
+                <li><a href="#q8">Presenting charging current</a></li>
+                <li><a href="#q9">Background activity</a></li>
             </ol>
         </td></tr>
         <tr><td>
@@ -167,7 +168,19 @@
             </p>
         </td></tr>
         <tr><td>
-            <h3 id="q7">7. Presenting charging current</h3>
+            <h3 id="q7">7. Presenting charging time</h3>
+            <p>The exact time the charger was connected/disconnected is displayed above the charger icon in the format:
+                <br/><b>(d) hh:mm</b>,
+                <br/>where <b>hh</b> represents the hour,
+                <br/><b>mm</b> represents the minute,
+                <br/>and optional <b>d</b> represents the day, which will be displayed if the day is different than today.
+                <br/>Clicking this time will switch to a countdown timer with a progressive time.
+                <br/>You'll see the number of hours and minutes that have passed since the charger was connected/disconnected.
+                <br/>Each time the charger is disconnected or connected, the time is reset to zero.
+            </p>
+        </td></tr>
+        <tr><td>
+            <h3 id="q8">8. Presenting charging current</h3>
             <p>Not every device shows the correct charging current.
                 <br/>A minus sign (-) before the current should appear during discharging,
                 the absence of the sign means charging, the battery is gaining energy.
@@ -178,7 +191,7 @@
             </p>
         </td></tr>
         <tr><td>
-            <h3 id="q8">8. Background activity</h3>
+            <h3 id="q9">9. Background activity</h3>
             <p>Remember that every application in the background uses some power.
                 <br/>Every android device has battery saving procedures,
                 that are designed to save battery power.
