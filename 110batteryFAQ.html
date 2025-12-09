@@ -52,7 +52,7 @@
         <tr><td>
             <h3 id="q1">1. Speech settings</h3>
             <ul>
-                <li>System - no change
+                <li>Switch <b>System - no change</b>
                     <p>The application will use Android system speech settings (engine, language, voice, speed, pitch),
                     <br/>often called "text to speech" or TTS for short, available in each version of Android system.
                     <br/>The localization depends on the Android version and manufacturer, check for example:
@@ -60,13 +60,13 @@
                     <br/>Settings -> System -> Language & input -> Text-to-speech output
                     </p>
                 </li>
-                <li>Application - (language)
+                <li>Switch <b>Application - (language)</b>
                     <p>When you select this option, which is selected by default,
                     the application will use the system text to speech engine,
                     <br/>but will also try to set the voice language to the same language as the application interface.
                     </p>
                 </li>
-                <li>Enter custom
+                <li>Switch <b>Enter custom</b>
                     <p>To customize own speech settings independent from system, choose this option,
                     <br/>and customize own parameters (engine, language, voice, speed, pitch)
                     directly in application.
@@ -80,10 +80,10 @@
                 You can only change the speech language.
             <br/>To do this, go to the app's <b>"Speech Settings"</b> and from the <b>"Settings"</b> list select <b>"Enter custom"</b>.
             <br/>Then, find your language in the <b>"Locale"</b> list.
-                The <b>"(+)"</b> sign next to the language indicates that the app supports the language and includes a speech translation for it.
+            <br/>The <b>"(+)"</b> sign next to the language indicates that the app supports the language and includes a speech translation for it.
             <br/>A list of languages supported by the app can be found <a href="./110batteryTranslations.html">here</a>.
             <br/>An unsupported language is marked with a <b>"(-)"</b> sign, it does not have translations for speech messages.
-                You can use it, but you must add your own translation to notifications.
+            <br/>You can use it, but you must add your own translation to notifications.
             <br/>Select the language and, while connected to the internet, test it by clicking the <b>"Play"</b> button.
             <br/>In the <b>"Engine"</b> list, you can change the speech engine if the default engine doesn't support your language.
             <br/>For some speech engines, you may need to download the missing language first.
@@ -94,11 +94,11 @@
             <h3 id="q3">3. Downloading a speech language voices</h3>
             <p>A downloaded speech language voice is marked with a <b>"(+)"</b> sign in the <b>"Voice"</b> list,
                 an undownloaded voice is marked with a <b>"(-)"</b>.
-                An undownloaded voice will require an internet connection for playback.
+            <br/>An undownloaded voice will require an internet connection for playback.
             <br/>To download voices from the app, go to <b>"Speech Settings"</b> and click the <b>"Download"</b> button.
-                If you have multiple speech engines installed, you will be prompted to select a speech engine.
+            <br/>If you have multiple speech engines installed, you will be prompted to select a speech engine.
             <br/>You should then see a list of speech languages for the selected engine.
-                Select a language, a list of downloadable voices may appear.
+            <br/>Select a language, a list of downloadable voices may appear.
                 Select a voice or voice packs and click the download button.
             <br/>If your language is not listed,
                 check the speech engine's documentation to see if it supports the language you are looking for.
@@ -125,12 +125,12 @@
             </ul>
         </td></tr>
         <tr><td>
-            <h3 id="q5">5. Voice notifications about battery health, charging level, connected charger.</h3>
+            <h3 id="q5">5. Voice notifications about battery health, charging level, connected charger</h3>
             <p>The latest version adds the ability to change the interval between voice notifications for charging level and temperature.
                 <br/>Previously, the app repeated the battery level in 1% increments at a predefined interval,
                 which could be too frequent on fast chargers.
-                <br/>Now you can modify this interval yourself. By default, it's set between 5-20% depending on the level,
-                but you can set it to 1%, as in previous versions of the app, or any other value you prefer.
+                <br/>Now you can modify this interval yourself. By default, for less important levels, it's set now to 10-20% depending on the level,
+                but you can set it to any other value you prefer.
             </p>
             <p>Preferences - section <b>Alarms/notifications with sound/voice</b>
                 <br/>The app notifies you with a voice prompt when changes occur or when events such as device unlocking or time change.
@@ -168,21 +168,22 @@
             </p>
         </td></tr>
         <tr><td>
-            <h3 id="q7">7. Presenting charging time</h3>
-            <p>The exact time the charger was connected/disconnected is displayed above the charger icon in the format:
-                <br/><b>(d) hh:mm</b>,
-                <br/>where <b>hh</b> represents the hour,
-                <br/><b>mm</b> represents the minute,
-                <br/>and optional <b>d</b> represents the day, which will be displayed if the day is different than today.
-                <br/>Clicking this time will switch to a countdown timer with a progressive time.
-                <br/>You'll see the number of hours and minutes that have passed since the charger was connected/disconnected.
-                <br/>Each time the charger is disconnected or connected, the time is reset to zero.
+            <h3 id="q7">7. Displaying charge/discharge times</h3>
+            <p>Above the connection type icon, a clock displays the <b>charge/discharge time</b> in the format:
+                <br/><b>(d) hh:mm</b>, where
+                <br/><b>d</b> - (optional) represents the days, which is displayed if the time exceeds one day,
+                <br/><b>hh</b> - represents the hours,
+                <br/><b>mm</b> - represents the minutes.
+                <br/>Every time the device is connected or disconnected, this clock is reset to 0:00 and the countdown starts over.
+                <br/>After connecting the charger on some devices,
+                <br/>an <b>approximate time remaining until the device is fully charged</b> may be displayed under the charging icon,
+                in the same format as described above.
             </p>
         </td></tr>
         <tr><td>
             <h3 id="q8">8. Presenting charging current</h3>
             <p>Not every device shows the correct charging current.
-                <br/>A minus sign (-) before the current should appear during discharging,
+                <br/>A minus sign <b>(-)</b> before the current should appear during discharging,
                 the absence of the sign means charging, the battery is gaining energy.
                 <br/>It should be noted that some devices can have the opposite logic.
                 <br/>It is also possible that some weak chargers or USB are not able to provide enough power,
@@ -198,11 +199,11 @@
                 <br/>The system may try to stop some apps from running in the background,
                 especially when the device is disconnected from the charger.
                 <br/>To avoid this behaviour, check the various system app settings, for example:
-                <br/>"Allow background activity"
-                <br/>"Ignore battery optimization"
-                <br/>"Remove from optimized applications"
+                <br/><b>"Allow background activity"</b>
+                <br/><b>"Ignore battery optimization"</b>
+                <br/><b>"Remove from optimized applications"</b>
             </p>
-            <p>If you only need the application as a charging assistant,
+            <p>If you only need the application as a <b>charging assistant</b>,
                 you can manually close the application once it's done charging.
                 <br/>Use the cross in upper right corner to completely close the application,
                 along with the notification.
@@ -210,15 +211,15 @@
             <p>Preferences - section <b>Background activity</b>
                 <br/>This section controls various parameters of the app's background operation.
                 <br/>The app enters background mode when it's not visible on the screen, for example, after launching another app or locking the phone.
-                While running in the background, the app displays important information in the form of system notifications.
+                <br/>While running in the background, the app displays important information in the form of system notifications.
             </p>
             <ul>
             <li>Switch <b>Automatically mute when device sound is turned off</b>
-                <p>The app responds to device muting, for example, by turning off the sound directly or by activating "Do Not Disturb" mode.
-                If the app is not visible, the app's sound will be muted, and the app will stop speaking.
+                <p>The app responds to device muting, for example, by turning off the sound directly or by activating <b>"Do Not Disturb"</b> mode.
+                <br/>If the app is not visible, the app's sound will be muted, and the app will stop speaking.
                 <br/>This option is very convenient, for example, when going to sleep or in a meeting.
-                We don't have to search for the app and turn off the sound directly in the app.
-                The app will respond to the device's sound being turned off.
+                <br/>We don't have to search for the app and turn off the sound directly in the app.
+                <br/>The app will respond to the device's sound being turned off.
                 </p>
             </li>
             <li>Switch <b>Show system notifications</b>
@@ -229,13 +230,14 @@
             <li>Switch <b>Run background service</b>
                 <p>The app will run as a background service.
                 <br/>For advanced users, you can check the background services in your phone's developer options.
-                You can find instructions on how to enable developer settings in your phone's documentation or search the internet or YouTube.
+                <br/>You can find instructions on how to enable <b>developer settings</b> in your phone's documentation or search the internet or YouTube.
                 </p>
             </li>
             <li>Switch <b>Automatic start after device restart</b>
                 <p>The app will automatically restart after your phone restarts.
-                <br/>Due to background app restrictions, automatic restart may not work on newer Android versions,
-                such as 15 (VanillaIceCream) and 16 (Baklava).
+                <br/>Due to background app restrictions for Android 15 (VanillaIceCream), 16 (Baklava) and newer,
+                <br/>for the app to run properly, <b>power saving must be disabled</b> for the app.
+                <br/>Go to the app's system settings and see what settings are available.
                 </p>
             </li>
             </ul>
