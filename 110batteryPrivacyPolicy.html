@@ -34,31 +34,53 @@
 	<p><a href="./index.html">Home</a></p>
 
 	<h2>Privacy Policy</h2>
-	<p>Version: <b>1.02</b> Updated: <b>2025-07-30</b></p>
+	<p>Version: <b>2.00</b> Updated: <b>2026-05-28</b></p>
 
 	<table cellspacing="20">
 		<tr><td>
 			<ol>
-				<li><a href="#q1">User data</a></li>
-				<li><a href="#q2">Notifications - background work</a></li>
-				<li><a href="#q3">Voice synthesis</a></li>
-				<li><a href="#q4">Redirects to external sites</a></li>
-				<li><a href="#q5">Email</a></li>
-				<li><a href="#q6">Ads</a></li>
+				<li><a href="#q1">User's personal data</a></li>
+				<li><a href="#q2">Technical data</a></li>
+				<li><a href="#q3">Notifications - background work</a></li>
+				<li><a href="#q4">Voice synthesis</a></li>
+				<li><a href="#q5">Redirects to external sites</a></li>
+				<li><a href="#q6">Email</a></li>
+				<li><a href="#q7">Ads</a></li>
 			</ol>
 		</td></tr>
 		<tr><td>
-			<h3 id="q1">1.User data</h3>
-			The application does not read, process or collect any user data,
-			does not send data to the cloud, external servers or external companies,
-			does not create user accounts.
-			<br/>
-			The application uses technical information about the device,
-			in particular the battery status.
-			It reads, presents, processes this information only on the device.
+			<h3 id="q1">1.User's personal data - user security</h3>
+			The application <b>does not read, process or collect</b> any user personal data (name, address, email etc.),
+			so it does not transmit such data to the cloud, external servers or third-party companies,
+			and does not create user accounts.
 		</td></tr>
 		<tr><td>
-			<h3 id="q2">2. Notifications - background work</h3>
+			<h3 id="q2">2.Technical data of the device</h3>
+			The work application uses technical information from the device in a statistical and anonymous manner, in particular:
+			<ul>
+				<li>
+					power and battery parameters - battery type, capacity, voltage, temperature, etc.
+				</li>
+				<li>
+					device parameters - phone model, operating system version, screen resolution, language, approximate location read from the IP address
+				</li>
+				<li>
+					application activity – opened screens, visited links, changed parameters, warnings, application errors
+				</li>
+			</ul>
+			The app uses standard Google libraries to monitor this data.
+			<br/>
+			Some data may be transferred to Google servers for analytical purposes,
+			to gain better insight into app usage and to help with app development.
+			<br/>
+			If you do not want to share any technical data outside your device,
+			you can purchase <b>the paid version of the app</b>.
+			<br/>
+			It's smaller, faster, and more cost-effective, and doesn't contain ads or analytics components/classes/libraries,
+			so it doesn't download or send any data to external servers.
+		</td></tr>
+		<tr><td>
+			<h3 id="q3">3. Notifications - background work</h3>
 			To run the application in the background (without a visible screen) during which notifications are displayed
 			and speech or sounds can be played,
 			the application uses the following Android system permissions:
@@ -66,17 +88,17 @@
 				<li>WAKE_LOCK - permission to wake the device from standby mode</li>
 				<li>RECEIVE_BOOT_COMPLETED - permission to automatically start the application after restarting the device</li>
 				<li>POST_NOTIFICATIONS - permission to show notifications</li>
-				<li>FOREGROUND_SERVICE - permission to start a service with notifications</li>
-				<li>FOREGROUND_SERVICE_MEDIA_PLAYBACK - permission to start a service with multimedia playback</li>
+				<li>FOREGROUND_SERVICE (MEDIA_PLAYBACK/SPECIAL_USE) - permission to run a background service,
+					with battery state analyzing, multimedia playback, and visible notifications
+				</li>
 				<li>BLUETOOTH - permission to access Bluetooth wireless connections</li>
 			</ul>
-			<br/>
 			You can enable or disable showing notifications in the application settings:
 			<br/>
 			<img width="120" alt='Notifications Permission' src="imgs/110battery_notifications_permission_242.png"/>
 		</td></tr>
 		<tr><td>
-			<h3 id="q3">3.Voice synthesis</h3>
+			<h3 id="q4">4.Voice synthesis</h3>
 			The application uses the engine (libraries) to synthesize voice,
 			such as those installed on the device.
 			<br/>
@@ -98,7 +120,7 @@
 			does not need or ask for permissions to the microphone.
 		</td></tr>
 		<tr><td>
-			<h3 id="q4">4.Redirects to external sites</h3>
+			<h3 id="q5">5.Redirects to external sites</h3>
 			The application contains links to external resources such as:
 			<ul>
 				<li><a href="https://play.google.com/store/apps/details?id=software110kv.battery">the application page in the Google Store</a></li>
@@ -108,7 +130,7 @@
 			</ul>
 		</td></tr>
 		<tr><td>
-			<h3 id="q5">5.Email</h3>
+			<h3 id="q6">6.Email</h3>
 			The application allows you to pre-prepare queries via email directly from the application.
 			The email includes basic technical information about the device
 			such as manufacturer, model, and screen dimensions.
@@ -118,7 +140,7 @@
 			<strong>battery.110kvs@gmail.com</strong>
 		</td></tr>
 		<tr><td>
-			<h3 id="q6">6.Ads</h3>
+			<h3 id="q7">7.Ads</h3>
 			The paid application does not contain advertisements.
 			<br/>
 			The free version of the application displays advertisements.
