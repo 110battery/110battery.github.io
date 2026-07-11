@@ -19,13 +19,13 @@
     <priority>0.6400</priority>
 </url>
 <url>
-   <loc>https://110battery.github.io/110batteryScreen.html</loc>
+   <loc>https://110battery.github.io/110batteryHelp.html</loc>
    <lastmod>2026-07-09</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
-   <loc>https://110battery.github.io/110batteryArt.html</loc>
+   <loc>https://110battery.github.io/110batteryTips.html</loc>
    <lastmod>2026-07-09</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.6400</priority>
@@ -40,12 +40,24 @@
    <loc>https://110battery.github.io/110batteryPrivacyPolicy.html</loc>
    <lastmod>2026-07-09</lastmod>
    <changefreq>daily</changefreq>
-   <priority>0.6400</priority>
+   <priority>0.5000</priority>
 </url>
 <url>
-   <loc>https://110battery.github.io/110batteryTranslations.html</loc>
-   <lastmod>2026-07-09</lastmod>
-   <changefreq>daily</changefreq>
-   <priority>0.6400</priority>
+    <loc>https://110battery.github.io/110batteryTranslations.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.4000</priority>
+</url>
+<url>
+    <loc>https://110battery.github.io/110batteryScreen.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3200</priority>
+</url>
+<url>
+    <loc>https://110battery.github.io/110batteryArt.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3200</priority>
 </url>
 </urlset>
