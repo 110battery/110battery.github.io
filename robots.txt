@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://110kvs.eu/sitemap.xml
+Sitemap: https://110battery.github.io/sitemap.xml
