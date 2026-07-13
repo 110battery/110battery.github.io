@@ -10,5 +10,17 @@
         "3A:DA:9A:CD:EF:A8:1A:C3:1D:3E:A9:16:2F:57:7F:6B:FD:FD:BE:D1:80:82:78:74:1F:54:E5:FB:83:CE:29:44"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "software110kv.battery.plus",
+      "sha256_cert_fingerprints": [
+        "26:08:DA:3D:3D:A8:C7:DA:D6:4A:C2:3E:79:53:AB:1F:6B:92:CB:13:4F:10:1D:9C:1F:FC:0A:EA:FF:2D:AA:53"
+      ]
+    }
   }
 ]
