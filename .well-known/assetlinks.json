@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "software110kv.battery",
+      "sha256_cert_fingerprints": [
+        "3A:DA:9A:CD:EF:A8:1A:C3:1D:3E:A9:16:2F:57:7F:6B:FD:FD:BE:D1:80:82:78:74:1F:54:E5:FB:83:CE:29:44"
+      ]
+    }
+  }
+]
